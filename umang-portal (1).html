@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UMANG — Government Polytechnic Araria</title>
+<link rel="icon" href="data:image/jpeg;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+<style>
+:root{--bg:#070d26;--card:#101a45;--card2:#16235a;--line:#2a3b86;--txt:#eef2ff;--mut:#9fb0ea;--blue:#3d6bff;--blue2:#2547c9;--org:#ff8a1f;--org2:#d96a00;--grn:#27c783;--red:#ff4d63}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Poppins,system-ui,sans-serif;color:var(--txt);background:radial-gradient(900px 500px at 85% -5%,#3d6bff40,transparent),radial-gradient(700px 500px at -5% 30%,#ff8a1f26,transparent),var(--bg);min-height:100vh}
+a{color:inherit}
+.view{display:none;animation:fade .35s}.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.wrap{max-width:1250px;margin:auto;padding:18px}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:#070d26ee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .in{max-width:1250px;margin:auto;padding:8px 18px;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;cursor:pointer;min-width:0}
+.brand img{width:54px;height:54px;border-radius:14px;box-shadow:0 4px 0 #0a1233,0 8px 14px #0008;border:2px solid #ffffff30;flex:none}
+.brand .t1{font-weight:800;font-size:clamp(13px,2.3vw,19px);letter-spacing:.6px;line-height:1.15;text-transform:uppercase}
+.brand .t2{font-weight:900;font-size:clamp(22px,4vw,32px);letter-spacing:5px;line-height:1.05;background:linear-gradient(180deg,#fff2c9 0%,#ffb347 45%,#ff7a00 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 0 #7d3d00) drop-shadow(0 4px 6px #000a);-webkit-text-stroke:.6px #ffd9a0}
+.menu{margin-left:auto;display:flex;gap:4px;align-items:center}
+.menu a{padding:8px 12px;border-radius:10px;text-decoration:none;font-size:14px;font-weight:500;color:var(--mut);cursor:pointer;white-space:nowrap}
+.menu a:hover,.menu a.on{color:#fff;background:#ffffff14}
+.burger{display:none;margin-left:auto}
+@media(max-width:900px){.burger{display:block}.menu{display:none;position:absolute;left:0;right:0;top:100%;background:#0a1233;flex-direction:column;align-items:stretch;padding:10px 18px;border-bottom:1px solid var(--line)}.menu.open{display:flex}}
+#sync{display:none;font-size:10px;padding:3px 8px;border-radius:99px;background:#ffffff14;color:var(--mut);white-space:nowrap}
+/* buttons */
+.btn{appearance:none;border:0;cursor:pointer;color:#fff;font:600 14px Poppins,sans-serif;padding:11px 18px;border-radius:13px;background:linear-gradient(180deg,#5f86ff,var(--blue2));box-shadow:0 5px 0 #17307f,0 10px 16px #0007;transition:transform .08s,box-shadow .08s;white-space:nowrap}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 #17307f,0 3px 6px #0007}
+.btn.o{background:linear-gradient(180deg,#ffb04d,var(--org2));box-shadow:0 5px 0 #7d3d00,0 10px 16px #0007}.btn.o:active{box-shadow:0 1px 0 #7d3d00}
+.btn.g{background:linear-gradient(180deg,#3fdc9b,#16996a);box-shadow:0 5px 0 #0b6446,0 10px 16px #0007}.btn.g:active{box-shadow:0 1px 0 #0b6446}
+.btn.r{background:linear-gradient(180deg,#ff7384,#c82a40);box-shadow:0 5px 0 #7a1423,0 10px 16px #0007}.btn.r:active{box-shadow:0 1px 0 #7a1423}
+.btn.d{background:linear-gradient(180deg,#34437f,#222f66);box-shadow:0 5px 0 #121b44,0 10px 16px #0007}.btn.d:active{box-shadow:0 1px 0 #121b44}
+.btn.s{padding:7px 12px;font-size:12px;border-radius:10px;box-shadow:0 3px 0 #17307f,0 5px 8px #0007}
+.btn.s.r{box-shadow:0 3px 0 #7a1423,0 5px 8px #0007}.btn.s.g{box-shadow:0 3px 0 #0b6446,0 5px 8px #0007}.btn.s.d{box-shadow:0 3px 0 #121b44,0 5px 8px #0007}.btn.s.o{box-shadow:0 3px 0 #7d3d00,0 5px 8px #0007}
+.btn[disabled]{opacity:.5;cursor:not-allowed;filter:grayscale(.5)}
+.link{color:#ffb36b;cursor:pointer;font-size:13px;text-decoration:underline}
+/* cards */
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 10px 26px #0006}
+.card h2,.card h3{margin:0 0 12px}
+.sec{margin:34px 0 14px;display:flex;align-items:end;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.sec h2{margin:0;font-size:24px}.sec small{color:var(--mut)}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+/* hero */
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center;padding:30px 0 10px}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+.hero .col{font-weight:700;letter-spacing:2px;color:#ffcf99;font-size:clamp(12px,2.4vw,16px);text-transform:uppercase}
+.hero h1{font-size:clamp(50px,11vw,104px);margin:6px 0 8px;line-height:1;font-weight:900;letter-spacing:3px;background:linear-gradient(180deg,#fff7df 0%,#ffc470 40%,#ff7a00 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 #7d3d00) drop-shadow(0 10px 14px #000b);-webkit-text-stroke:1px #ffe2b3}
+.hero p{color:var(--mut);font-size:16px;max-width:560px}
+.cd{display:flex;gap:10px;margin:18px 0;flex-wrap:wrap}
+.cd div{background:linear-gradient(180deg,#1d2c6d,#121c4c);border:1px solid var(--line);border-radius:14px;padding:10px 16px;text-align:center;box-shadow:0 5px 0 #0a1233}
+.cd b{display:block;font-size:26px}.cd span{font-size:11px;color:var(--mut)}
+.scene{perspective:900px;width:190px;height:190px;margin:36px auto 44px}
+.hero>div{position:relative}.hero>div:first-child{z-index:3}.hero>div:last-child{z-index:1;display:grid;place-items:center;min-height:300px}
+.cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;animation:spin 16s linear infinite}
+.cube div{position:absolute;inset:0;display:grid;place-items:center;font-size:68px;border:2px solid #ffffff40;border-radius:20px;background:linear-gradient(135deg,#3d6bffcc,#ff8a1fcc);box-shadow:inset 0 0 40px #0006}
+.cube .f1{transform:translateZ(95px)}.cube .f2{transform:rotateY(90deg) translateZ(95px)}.cube .f3{transform:rotateY(180deg) translateZ(95px)}.cube .f4{transform:rotateY(-90deg) translateZ(95px)}.cube .f5{transform:rotateX(90deg) translateZ(95px)}.cube .f6{transform:rotateX(-90deg) translateZ(95px)}
+@keyframes spin{from{transform:rotateX(-20deg) rotateY(0)}to{transform:rotateX(-20deg) rotateY(360deg)}}
+/* event cards */
+.ev{display:flex;gap:12px;align-items:center;background:linear-gradient(180deg,#1a2865,#121c4f);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:0 5px 0 #0a1233;transition:transform .15s}
+.ev:hover{transform:translateY(-3px) rotateX(4deg)}
+.ev .ic{font-size:30px;width:52px;height:52px;border-radius:14px;background:#ffffff14;display:grid;place-items:center;flex:none}
+.ev .nm{font-weight:600;font-size:15px}.ev .sm{font-size:11px;color:var(--mut)}
+.ev .rt{margin-left:auto;text-align:right}
+.st{display:inline-block;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700}
+.st.o{background:#27c78329;color:#5bf0b0}.st.c{background:#ff4d6329;color:#ff8d9b}
+/* forms */
+label{display:block;font-size:12px;color:var(--mut);margin:10px 0 5px;font-weight:500}
+input,select,textarea{width:100%;background:#0a1238;border:1px solid var(--line);color:var(--txt);border-radius:11px;padding:11px 12px;font:14px Poppins,sans-serif;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--org);box-shadow:0 0 0 3px #ff8a1f33}
+input[type=checkbox]{width:auto}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0 14px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;overflow-x:auto;padding-bottom:4px}
+.tab{padding:9px 16px;border-radius:12px;background:#0d1740;border:1px solid var(--line);cursor:pointer;font-size:13px;font-weight:600;color:var(--mut);box-shadow:0 3px 0 #060c24;white-space:nowrap;user-select:none}
+.tab.on{background:linear-gradient(180deg,#ffb04d,var(--org2));color:#fff;border-color:transparent}
+.authbox{max-width:620px;margin:20px auto}
+.photo{width:92px;height:92px;border-radius:50%;object-fit:cover;background:#0a1238;border:3px solid var(--org);display:grid;place-items:center;font-size:36px;overflow:hidden;flex:none}
+.photo img{width:100%;height:100%;object-fit:cover}
+.prof{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.prof .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px 16px;flex:1;min-width:240px}
+.kv small{color:var(--mut);display:block;font-size:11px}.kv b{font-size:14px}
+.banner{padding:12px 16px;border-radius:14px;font-size:13px;margin-bottom:14px;font-weight:500}
+.banner.ok{background:#27c7831f;border:1px solid #27c78366}.banner.no{background:#ff4d631f;border:1px solid #ff4d6366}.banner.wn{background:#ff8a1f1f;border:1px solid #ff8a1f66}
+/* team picker */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0}
+.tcard{border:2px solid var(--line);border-radius:14px;padding:12px;cursor:pointer;background:#0c1640;box-shadow:0 4px 0 #060c24;transition:.12s}
+.tcard:active{transform:translateY(3px);box-shadow:0 1px 0 #060c24}
+.tcard.on{border-color:var(--org);background:linear-gradient(180deg,#2a2a5c,#1b2358)}
+.tcard small{color:var(--mut);font-size:10px;text-transform:uppercase;letter-spacing:.6px}
+.tcard b{display:block;font-size:14px;margin:2px 0 8px}
+.tcard i{font-style:normal;font-size:13px;color:#ffd0a1;font-weight:600}
+.tcard .yb{float:right;font-size:10px;background:#27c78333;color:#5bf0b0;padding:2px 8px;border-radius:99px;font-weight:700}
+/* admin */
+.adm{display:grid;grid-template-columns:210px 1fr;gap:16px}
+@media(max-width:900px){.adm{grid-template-columns:1fr}}
+.adm>*{min-width:0}
+.side{display:flex;flex-direction:column;gap:8px}
+@media(max-width:900px){.side{flex-direction:row;overflow-x:auto;padding-bottom:6px}}
+.side .tab{text-align:left}
+.stat{background:linear-gradient(180deg,#1d2c6d,#121c4c);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 5px 0 #0a1233}
+.stat b{font-size:28px;display:block}.stat span{font-size:12px;color:var(--mut)}
+.bar{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:12px}
+.bar i{display:block;height:14px;border-radius:8px;background:linear-gradient(90deg,var(--blue),var(--org));min-width:4px;box-shadow:0 2px 0 #0006}
+.bar span{min-width:150px;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tw{overflow:auto;border-radius:14px;border:1px solid var(--line);max-height:62vh}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th{position:sticky;top:0;background:#0e1a52;text-align:left;padding:10px;font-size:12px;color:#cfe0ff;white-space:nowrap;z-index:1}
+td{padding:9px 10px;border-top:1px solid #22307a;white-space:nowrap}
+tr:hover td{background:#ffffff08}
+.sw{position:relative;width:48px;height:26px;display:inline-block;flex:none}
+.sw input{display:none}.sw s{position:absolute;inset:0;background:#3a1b25;border-radius:99px;cursor:pointer;transition:.2s;box-shadow:inset 0 2px 4px #0008}
+.sw s:before{content:"";position:absolute;width:20px;height:20px;left:3px;top:3px;border-radius:50%;background:#fff;transition:.2s}
+.sw input:checked+s{background:var(--grn)}.sw input:checked+s:before{transform:translateX(22px)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.gal .it{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0a1238;position:relative}
+.gal img{width:100%;height:140px;object-fit:cover;display:block}
+.gal .cap{padding:8px 10px;font-size:12px;color:var(--mut)}
+/* notices */
+.notice{display:flex;gap:14px;background:linear-gradient(180deg,#18265f,#111a48);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:14px;padding:14px 16px;margin-bottom:12px;box-shadow:0 5px 0 #0a1233}
+.notice.Important{border-left-color:var(--org)}.notice.Urgent{border-left-color:var(--red)}
+.notice .ni{font-size:26px;flex:none}
+.notice h4{margin:0 0 4px;font-size:15px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.notice p{margin:0 0 6px;color:#d6defa;font-size:13.5px;white-space:pre-wrap}
+.notice small{color:var(--mut);font-size:11px}
+.tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:99px;background:#3d6bff33;color:#9db7ff;text-transform:uppercase;letter-spacing:.5px}
+.tag.Important{background:#ff8a1f33;color:#ffb36b}.tag.Urgent{background:#ff4d6333;color:#ff8d9b}
+.newb{font-size:9px;font-weight:800;color:#fff;background:var(--red);padding:2px 7px;border-radius:5px;letter-spacing:.8px;animation:blink 1s steps(2,start) infinite}
+@keyframes blink{50%{opacity:.15}}
+/* modal & toast */
+#modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;z-index:100;padding:14px}
+#modal.on{display:grid}
+#modal .box{width:min(520px,100%);max-height:92vh;overflow:auto}
+#modal .box.big{width:min(760px,100%)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(30px);background:#0b1230;border:1px solid var(--org);padding:11px 18px;border-radius:13px;font-size:13px;z-index:200;opacity:0;transition:.25s;box-shadow:0 10px 24px #000a;max-width:92vw;text-align:center;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+/* footer */
+footer{margin-top:44px;border-top:1px solid var(--line);background:linear-gradient(180deg,#0b1334,#070d26)}
+footer .in{max-width:1250px;margin:auto;padding:30px 18px;display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+footer img{width:96px;height:96px;border-radius:50%;border:4px solid var(--org);box-shadow:0 6px 0 #7d3d00,0 12px 20px #0009;flex:none;object-fit:cover}
+footer h3{margin:0;font-size:clamp(18px,3.4vw,28px);letter-spacing:.8px;line-height:1.15}
+footer h3 span{color:#ffd37a;display:block}
+footer .ln{display:flex;gap:10px;margin-top:10px;font-size:14px;color:#e3e9ff;line-height:1.5}
+footer .ln b{flex:none}
+footer a{text-decoration:none}
+footer .ln:empty{display:none}
+.mut{color:var(--mut)}.hide{display:none!important}
+
+/* help button */
+#helpFab{position:fixed;right:18px;bottom:84px;width:56px;height:56px;border-radius:50%;border:0;cursor:grab;z-index:90;font:800 28px Poppins,sans-serif;color:#fff;background:linear-gradient(180deg,#ffb04d,var(--org2));box-shadow:0 6px 0 #7d3d00,0 12px 20px #000a;touch-action:none;user-select:none;-webkit-user-select:none;display:none;place-items:center;padding:0}
+#helpFab.on{display:grid}#helpFab:active{cursor:grabbing}
+.qcard{border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px;background:#0d1640}.qcard.dn{opacity:.55}
+.qb{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;background:#ff8a1f33;color:#ffcf99}.qb.q{background:#3d6bff33;color:#b9c9ff}
+.qcard .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px 16px;font-size:13px;margin-top:8px}
+.qcard .kv span{color:var(--mut)}
+.pwv{font-family:monospace;letter-spacing:1px}
+.hf label{display:block;margin-top:10px;font-size:13px;color:var(--mut)}
+</style>
+</head>
+<body>
+
+<div class="nav"><div class="in">
+  <div class="brand" onclick="go('home')"><img id="brImg" src="data:image/jpeg;base64,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" alt="GP Araria"><div><div class="t1" id="brT1">Government Polytechnic Araria</div><div class="t2" id="brT2">UMANG</div></div></div>
+  <span id="sync"></span>
+  <button class="btn s d burger" onclick="$('#menu').classList.toggle('open')">☰ Menu</button>
+  <div class="menu" id="menu"></div>
+</div></div>
+
+<main>
+  <section class="view" id="v-home"></section>
+  <section class="view" id="v-auth"></section>
+  <section class="view" id="v-student"></section>
+  <section class="view" id="v-admin"></section>
+</main>
+
+<footer><div class="in"><img id="fLogo" alt="Logo"><div><h3 id="fT"></h3><div class="ln" id="fA"></div><div class="ln" id="fM"></div><div class="ln" id="fP"></div></div></div></footer>
+
+<div id="modal"><div class="box card" id="modalBox"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ===================== CONFIG (edit these) ===================== */
+const INSTITUTE_ID   = 'UMANG@GPA';          // Institute ID
+const INSTITUTE_PASS = 'Umang@1234';         // Institute Password (can also be changed in Admin Panel > Settings)
+const ADMIN_RESET = 'r2';                    // change this value to reset the Institute ID/Password back to the values above
+const DEMO_OPEN_STUDENT_LOGIN = false;       // true = any login works (testing only)
+const FIREBASE_DB_URL = '';                  // e.g. 'https://your-project-default-rtdb.firebaseio.com'  (empty = data stays on this device only)
+const EMAILJS = {service:'', template:'', key:''};   // for sending emails directly (empty = admin's mail app opens instead)
+const KEY='umang_portal_v1', SKEY='umang_session_v1';
+const CLOUD=FIREBASE_DB_URL.replace(/\/+$/,'');
+
+/* ===================== HELPERS ===================== */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const val=id=>($('#'+id)?.value||'').trim();
+const rid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const hsh=s=>{let x=5381;for(const c of 'um@ng'+s)x=((x<<5)+x+c.charCodeAt(0))|0;return x.toString(36)};
+const fmtD=d=>d?new Date(d+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}):'—';
+const fmtTS=t=>new Date(t).toLocaleString('en-IN',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),3200)}
+function showModal(h,big){$('#modalBox').className='box card'+(big?' big':'');$('#modalBox').innerHTML=h;$('#modal').classList.add('on')}
+function closeModal(){$('#modal').classList.remove('on')}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+function download(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
+function readImage(file,max=400,q=.78,type='image/jpeg'){return new Promise((res,rej)=>{const fr=new FileReader();fr.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,max/Math.max(im.width,im.height));const c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);res(c.toDataURL(type,q))};im.onerror=rej;im.src=fr.result};fr.onerror=rej;fr.readAsDataURL(file)})}
+
+/* auto icon from event name */
+const ICONS=[[/cricket/,'🏏'],[/kabaddi/,'🤼'],[/kho/,'🏃'],[/volley/,'🏐'],[/basket/,'🏀'],[/foot|soccer/,'⚽'],[/hockey/,'🏑'],[/tug/,'💪'],[/badminton|shuttle/,'🏸'],[/table tennis|ping|^tt$/,'🏓'],[/tennis/,'🎾'],[/chess|shatranj/,'♟️'],[/carrom|carom|billiard|pool|snooker/,'🎱'],[/athlet|track|race|run|sprint|marathon|relay/,'🏃'],[/jump|hurdle/,'🏃'],[/shot|discus|javelin|weight|gym|lifting/,'🏋️'],[/swim/,'🏊'],[/cycl/,'🚴'],[/box/,'🥊'],[/wrestl/,'🤼'],[/archer/,'🏹'],[/yoga/,'🧘'],[/golf/,'⛳'],[/debate|speech|elocution|oratory/,'🎙️'],[/quiz|gk/,'🧠'],[/essay|writing|story|poem|poetry|shayari/,'✍️'],[/poster|drawing|sketch|painting|paint|art/,'🎨'],[/rangoli/,'🌸'],[/mehndi|henna/,'🌿'],[/sing|song|music|antakshari/,'🎤'],[/dance|dancing|nritya/,'💃'],[/drama|skit|nukkad|mono|mime|mimicry|acting|theatre/,'🎭'],[/guitar/,'🎸'],[/tabla|drum/,'🥁'],[/fashion|ramp|model/,'👗'],[/photo/,'📸'],[/video|reel|film/,'🎬'],[/rap/,'🎤'],[/tech|coding|code|hackathon|robot/,'💻'],[/memory|puzzle|sudoku/,'🧩'],[/cook|food/,'🍳']];
+function iconFor(name){const n=String(name||'').toLowerCase();for(const[r,i]of ICONS)if(r.test(n))return i;return'🏆'}
+const abbr=b=>b.includes('&')?b.split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).map(w=>w[0].toUpperCase()).join(''):b.split(/\s+/)[0];
+
+/* ===================== DATA ===================== */
+const DEF=[['Cricket','Sports',1],['Kabaddi','Sports',1],['Volleyball','Sports',1],['Basketball','Sports',1],['Football','Sports',1],['Tug of War','Sports',1],['Badminton','Sports',0],['Table Tennis','Sports',0],['Chess','Sports',0],['Carrom','Sports',0],['Athletics (Track)','Sports',0],['Debate','Cultural',0],['Quiz','Cultural',1],['Essay Writing','Cultural',0],['Poster Making','Cultural',0],['Singing','Cultural',0],['Dance','Cultural',0],['Painting','Cultural',0],['Rangoli','Cultural',0]];
+const defEvents=()=>DEF.map(([name,cat,team],i)=>({id:name.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,12)||rid(),name,cat,team:!!team,icon:iconFor(name),open:true,ord:i+1,teams:{}}));
+const dayStr=n=>{const d=new Date();d.setDate(d.getDate()+n);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+const newYear=(title,ev,dates=true)=>({title,start:dates?dayStr(14):'',end:dates?dayStr(15):'',deadline:dates?dayStr(10):'',regOpen:true,events:ev||defEvents(),notices:[],regs:[],gallery:[]});
+const DEF_FOOTER={t1:'GOVERNMENT POLYTECHNIC',t2:'ARARIA, BIHAR',addr:'Government Polytechnic Araria (G.P. Araria)\nDepartment of Science & Technology, Government of Bihar,\nRampur Kodarkatti, Araria, Bihar - 854325.',email:'principalgpararia@gmail.com',phone:'06453291077'};
+function fresh(){return{footer:{...DEF_FOOTER},logo:'',college:'Government Polytechnic Araria',tagline:'Celebrating Talent • Teamwork • Spirit',branches:['Civil Engineering','Computer Science & Engineering','Electrical Engineering','Electronics Engineering','Mechanical Engineering'],users:{},years:{'2026':newYear('UMANG 2026')},active:'2026',admin:{id:INSTITUTE_ID,pass:hsh(INSTITUTE_PASS),rv:ADMIN_RESET},queries:{}}}
+function normalize(d){
+  const f=fresh();d.users=d.users||{};d.years=d.years&&Object.keys(d.years).length?d.years:f.years;
+  d.branches=Array.isArray(d.branches)&&d.branches.length?d.branches:f.branches;d.college=d.college||f.college;d.tagline=d.tagline??f.tagline;d.footer=Object.assign({},f.footer,d.footer||{});d.logo=d.logo||'';
+  if(!d.admin||!d.admin.id||d.admin.rv!==ADMIN_RESET)d.admin=f.admin;d.queries=(d.queries&&typeof d.queries==='object')?d.queries:{};
+  Object.values(d.years).forEach(y=>{y.events=Array.isArray(y.events)?y.events:Object.values(y.events||{});y.regs=y.regs||[];y.notices=y.notices||[];y.gallery=y.gallery||[];
+    y.events.forEach((e,i)=>{if(e.ord==null)e.ord=i+1;if(!e.teams)e.teams={}});y.events.sort((a,b)=>a.ord-b.ord);
+    y.notices.forEach(n=>{if(!n.type)n.type='General'});y.gallery.forEach((g,i)=>{if(!g.ts)g.ts=i+1});y.regs.forEach(r=>{r.team=r.team||'';r.role=r.role||''})});
+  if(!d.years[d.active])d.active=Object.keys(d.years)[0];
+  return d;
+}
+function load(){try{const d=JSON.parse(localStorage.getItem(KEY));if(d&&d.years)return normalize(d)}catch(e){}return fresh()}
+let db=load(),sess=null,cur='home',authTab='login',adminYear=db.active,adminTab='dash',evTab='Sports',cloudReady=!CLOUD;
+try{const a=sessionStorage.getItem(SKEY),b=localStorage.getItem(SKEY);if(a)sess=JSON.parse(a);else if(b){const p=JSON.parse(b);if(p.role==='student')sess=p;else localStorage.removeItem(SKEY)}}catch(e){}
+const saveSess=()=>{try{localStorage.removeItem(SKEY);sessionStorage.removeItem(SKEY);if(sess)(sess.role==='admin'?sessionStorage:localStorage).setItem(SKEY,JSON.stringify(sess))}catch(e){}};
+const Y=()=>db.years[db.active],AY=()=>db.years[adminYear]||(adminYear=db.active,db.years[db.active]);
+function regsOpen(ev,y=Y()){if(!y.regOpen||!ev.open)return false;if(y.deadline&&new Date(y.deadline+'T23:59:59')<new Date())return false;return true}
+function statusOf(ev,y=Y()){if(!y.regOpen)return['c','Closed'];if(y.deadline&&new Date(y.deadline+'T23:59:59')<new Date())return['c','Deadline over'];return ev.open?['o','Open']:['c','Closed']}
+const teamBranches=()=>db.branches.filter(b=>b!=='Other');
+const teamName=(ev,b)=>ev.teams?.[b]||`${abbr(b)} ${ev.name} Team`;
+
+/* ---------- storage + cloud sync (Firebase Realtime Database REST) ---------- */
+function flat(d){
+  const o={};o.meta={footer:d.footer,logo:d.logo||'',college:d.college,tagline:d.tagline,branches:d.branches,active:d.active,admin:d.admin,demoSeeded:!!d.demoSeeded};
+  Object.entries(d.users).forEach(([k,u])=>o['users/'+k]=u);
+  Object.entries(d.queries||{}).forEach(([k,q])=>o['queries/'+k]=q);
+  Object.entries(d.years).forEach(([y,Yr])=>{o[`years/${y}/meta`]={title:Yr.title,start:Yr.start,end:Yr.end,deadline:Yr.deadline,regOpen:Yr.regOpen};
+    Yr.events.forEach(e=>o[`years/${y}/events/${e.id}`]=e);Yr.regs.forEach(r=>o[`years/${y}/regs/${r.id}`]=r);Yr.notices.forEach(n=>o[`years/${y}/notices/${n.id}`]=n);Yr.gallery.forEach(g=>o[`years/${y}/gallery/${g.id}`]=g)});
+  return o;
+}
+function fromRemote(r){
+  const m=r.meta||{},d={footer:m.footer,logo:m.logo,college:m.college,tagline:m.tagline,branches:m.branches,active:m.active,admin:m.admin,demoSeeded:m.demoSeeded,users:r.users||{},queries:r.queries||{},years:{}};
+  Object.entries(r.years||{}).forEach(([y,Yr])=>{const mm=Yr.meta||{};d.years[y]={title:mm.title||'UMANG '+y,start:mm.start||'',end:mm.end||'',deadline:mm.deadline||'',regOpen:mm.regOpen!==false,events:Object.values(Yr.events||{}),regs:Object.values(Yr.regs||{}).sort((a,b)=>a.ts-b.ts),notices:Object.values(Yr.notices||{}).sort((a,b)=>a.ts-b.ts),gallery:Object.values(Yr.gallery||{}).sort((a,b)=>a.ts-b.ts)}});
+  if(Array.isArray(d.branches)===false&&d.branches)d.branches=Object.values(d.branches);
+  return normalize(d);
+}
+let lastFlat={},pushing=false,again=false,pushT=null,pollOn=false;const T0=Date.now();
+function setSync(s){const e=$('#sync');if(!e)return;e.style.display=(CLOUD&&sess?.role==='admin')?'':'none';e.textContent=!CLOUD?'':s==='ok'?'☁️ Live':s==='err'?'⚠️ Offline':'⏳ Connecting…';e.title=''}
+function save(){
+  try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){toast('Storage full — please use smaller photos');return false}
+  if(CLOUD&&cloudReady){clearTimeout(pushT);pushT=setTimeout(push,250)}
+  return true;
+}
+async function push(){
+  if(!CLOUD||!cloudReady)return;
+  if(pushing){again=true;return}
+  pushing=true;
+  try{do{again=false;const cur=flat(db),patch={};
+    new Set([...Object.keys(cur),...Object.keys(lastFlat)]).forEach(k=>{if(JSON.stringify(cur[k])!==JSON.stringify(lastFlat[k]))patch[k]=cur[k]===undefined?null:cur[k]});
+    if(Object.keys(patch).length){const r=await fetch(CLOUD+'/umang.json',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify(patch)});if(!r.ok)throw new Error('push');lastFlat=cur}
+  }while(again);setSync('ok')}catch(e){setSync('err')}
+  pushing=false;
+}
+async function pullRemote(){const r=await fetch(CLOUD+'/umang.json',{cache:'no-store'});if(!r.ok)throw new Error('pull');return r.json()}
+function safeToRerender(){return !$('#modal').classList.contains('on')&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName||'')}
+function rerender(){({home:renderHome,auth:()=>{},student:renderStudent,admin:renderAdmin})[cur]();nav()}
+async function cloudBoot(){
+  setSync('wait');
+  try{
+    const data=await pullRemote();
+    if(data&&data.meta){const local=db;db=fromRemote(data);lastFlat=flat(db);cloudReady=true;
+      /* keep items created on this device during this session (offline) so they are not lost */
+      Object.entries(local.users||{}).forEach(([k,u])=>{if(!db.users[k]&&(u.created||0)>=T0)db.users[k]=u});
+      Object.entries(local.queries||{}).forEach(([k,q])=>{if(!db.queries[k]&&(q.ts||0)>=T0)db.queries[k]=q});
+      Object.entries(local.years||{}).forEach(([yk,ly])=>{const ry=db.years[yk];if(!ry)return;const have=new Set(ry.regs.map(r=>r.id));ly.regs.forEach(r=>{if(!have.has(r.id)&&r.ts>=T0&&db.users[r.uid])ry.regs.push(r)})});
+      try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){}}
+    else{cloudReady=true;lastFlat={};purgeDemo();await push()}
+    purgeDemo();adminYear=db.active;setSync('ok');
+    if(sess?.role==='student'&&!db.users[sess.uid]){sess=null;saveSess()}
+    if(cur==='auth'&&authTab==='create'){/*keep form*/}else if(cur!=='auth')rerender();
+  }catch(e){setSync('err')}
+  if(!pollOn){pollOn=true;setInterval(poll,10000);window.addEventListener('focus',poll)}
+}
+async function poll(){
+  if(!CLOUD)return;
+  if(!cloudReady){await cloudBoot();return}   /* first connection failed, so try again */
+  try{
+    const pending=JSON.stringify(flat(db))!==JSON.stringify(lastFlat);
+    if(pending){await push();return}
+    const data=await pullRemote();if(!data||!data.meta){setSync('ok');return}
+    const nd=fromRemote(data),nf=flat(nd);
+    if(JSON.stringify(nf)!==JSON.stringify(lastFlat)){
+      db=nd;lastFlat=nf;try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){}
+      if(sess?.role==='student'&&!db.users[sess.uid]){sess=null;saveSess();go('home')}
+      else if(safeToRerender())rerender();
+    }
+    setSync('ok');
+  }catch(e){setSync('err')}
+}
+
+/* ===================== BRANDING (name, logo, footer — editable in Settings) ===================== */
+const DEF_LOGO=$('#brImg').src,DEF_ICON=$('link[rel=icon]').getAttribute('href');
+function applyBrand(){
+  const f=db.footer||{},lg=db.logo||DEF_LOGO,y=Y()||{},ft=y.title||'UMANG';
+  $('#brT1').textContent=db.college;$('#brT2').textContent=ft.replace(/\s*\d{2,4}\s*$/,'')||'UMANG';
+  [$('#brImg'),$('#fLogo')].forEach(im=>{if(im.getAttribute('src')!==lg)im.src=lg});
+  $('link[rel=icon]').href=db.logo||DEF_ICON;document.title=ft+' — '+db.college;
+  $('#fT').innerHTML=esc(f.t1||db.college)+(f.t2?'<span>'+esc(f.t2)+'</span>':'');
+  $('#fA').innerHTML=f.addr?'<b>📍</b><div>'+esc(f.addr).replace(/\n/g,'<br>')+'</div>':'';
+  $('#fM').innerHTML=f.email?'<b>✉️</b><a href="mailto:'+esc(f.email)+'">'+esc(f.email)+'</a>':'';
+  $('#fP').innerHTML=f.phone?'<b>📞</b><a href="tel:'+esc(f.phone)+'">'+esc(f.phone)+'</a>':'';
+}
+
+/* ===================== NAV / ROUTER ===================== */
+function nav(){
+  applyBrand();
+  const m=$('#menu'),link=(v,t)=>`<a class="${cur===v?'on':''}" onclick="go('${v}')">${t}</a>`;
+  let h=link('home','Home')+`<a onclick="goSec('evSec')">Events</a><a onclick="goSec('notSec')">Notices</a><a onclick="goSec('galSec')">Gallery</a>`;
+  if(sess?.role==='student')h+=link('student','My Dashboard')+`<a onclick="logout()">Logout</a>`;
+  else if(sess?.role==='admin')h+=link('admin','Admin Panel')+`<a onclick="logout()">Logout</a>`;
+  else h+=`<a class="${cur==='auth'&&authTab!=='inst'?'on':''}" onclick="openAuth('login')">Student Login</a><a class="${cur==='auth'&&authTab==='inst'?'on':''}" onclick="openAuth('inst')">Institute Login</a>`;
+  m.innerHTML=h;m.classList.remove('open');setSync(cloudReady&&CLOUD?'ok':'wait');
+}
+function goSec(id){go('home');setTimeout(()=>$('#'+id)?.scrollIntoView({behavior:'smooth'}),80)}
+function go(v){
+  if(v==='student'&&sess?.role!=='student')v='auth';
+  if(v==='admin'&&sess?.role!=='admin'){v='auth';authTab='inst'}
+  cur=v;$$('.view').forEach(e=>e.classList.toggle('on',e.id==='v-'+v));
+  ({home:renderHome,auth:renderAuth,student:renderStudent,admin:renderAdmin})[v]();
+  nav();updateHelp();window.scrollTo(0,0);
+}
+function openAuth(t){authTab=t;FP=null;go('auth')}
+function logout(){sess=null;saveSess();toast('Logged out');go('home')}
+
+/* ===================== HOME ===================== */
+function evCard(ev,y){const[c,t]=statusOf(ev,y);return`<div class="ev"><div class="ic">${esc(ev.icon)}</div><div><div class="nm">${esc(ev.name)}</div><div class="sm">${ev.team?'Team event':'Individual'}</div></div><div class="rt"><span class="st ${c}">${t}</span></div></div>`}
+const NI={General:'📢',Important:'⚠️',Urgent:'🚨'};
+let cdTimer=null;
+function renderHome(){
+  const y=Y(),v=$('#v-home');
+  const sports=y.events.filter(e=>e.cat==='Sports'),cult=y.events.filter(e=>e.cat!=='Sports');
+  v.innerHTML=`<div class="wrap">
+  <div class="hero"><div>
+    <div class="col">${esc(db.college)}</div>
+    <h1>${esc(y.title)}</h1>
+    <p>${esc(db.tagline)}. Register online for sports and cultural events — no more going class to class. One account, as many events as you like.</p>
+    <div class="cd" id="cd"></div>
+    <p style="font-size:14px;margin:0 0 16px">📅 <b>${fmtD(y.start)}${y.end&&y.end!==y.start?' – '+fmtD(y.end):''}</b> &nbsp;|&nbsp; ⏳ Registration deadline: <b>${fmtD(y.deadline)}</b></p>
+    <div class="row">
+      <button class="btn o" onclick="${sess?.role==='student'?"go('student')":"openAuth('create')"}">🎯 Register Now</button>
+      <button class="btn" onclick="openAuth('login')">Student Login</button>
+      <button class="btn d" onclick="openAuth('inst')">🏛 Institute Login</button>
+    </div>
+  </div>
+  <div><div class="scene"><div class="cube"><div class="f1">🏏</div><div class="f2">🎤</div><div class="f3">🏀</div><div class="f4">🏆</div><div class="f5">♟️</div><div class="f6">🎨</div></div></div></div></div>
+
+  <div class="sec" id="evSec"><h2>🏅 Sports</h2><small>${sports.length} events</small></div>
+  <div class="grid g3">${sports.map(e=>evCard(e,y)).join('')||'<p class="mut">No sports added yet.</p>'}</div>
+  <div class="sec"><h2>🎭 Cultural</h2><small>${cult.length} events</small></div>
+  <div class="grid g3">${cult.map(e=>evCard(e,y)).join('')||'<p class="mut">No cultural events added yet.</p>'}</div>
+
+  <div class="sec" id="notSec"><h2>📢 Notices</h2></div>
+  <div>${y.notices.length?y.notices.slice().reverse().map(n=>`<div class="notice ${esc(n.type)}"><div class="ni">${NI[n.type]||'📢'}</div><div><h4>${esc(n.title)}<span class="tag ${esc(n.type)}">${esc(n.type)}</span>${Date.now()-n.ts<864e5?'<span class="newb">NEW</span>':''}</h4>${n.text?`<p>${esc(n.text)}</p>`:''}<small>🕒 ${fmtTS(n.ts)}</small></div></div>`).join(''):'<p class="mut">No notices yet.</p>'}</div>
+
+  <div class="sec" id="galSec"><h2>📸 UMANG Memories</h2></div>
+  ${y.gallery.length?`<div class="gal">${y.gallery.map(g=>g.type==='img'?`<div class="it"><img src="${g.src}" alt=""><div class="cap">${esc(g.cap)}</div></div>`:`<div class="it"><a href="${esc(g.src)}" target="_blank" rel="noopener" style="display:grid;place-items:center;height:140px;font-size:46px;text-decoration:none">▶️</a><div class="cap">${esc(g.cap||'Video')}</div></div>`).join('')}</div>`:'<p class="mut">Photos and videos will appear here.</p>'}
+  </div>`;
+  clearInterval(cdTimer);
+  const tick=()=>{const el=$('#cd');if(!el)return clearInterval(cdTimer);
+    if(!y.start){el.innerHTML='';return}
+    const ms=new Date(y.start+'T00:00:00')-Date.now();
+    if(ms<=0){el.innerHTML=`<div><b>${y.end&&new Date(y.end+'T23:59:59')<new Date()?'Concluded':'LIVE'}</b><span>UMANG</span></div>`;return}
+    const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;
+    el.innerHTML=[[d,'Days'],[h,'Hours'],[m,'Min'],[s,'Sec']].map(([a,b])=>`<div><b>${String(a).padStart(2,'0')}</b><span>${b}</span></div>`).join('')};
+  tick();cdTimer=setInterval(tick,1000);
+}
+
+/* ===================== AUTH ===================== */
+let FP=null,pendingId='';
+function renderAuth(){
+  const v=$('#v-auth');
+  const tabs=[['login','🎓 Student Login'],['create','➕ Create Account'],['inst','🏛 Institute Login']];
+  v.innerHTML=`<div class="wrap"><div class="authbox">
+    <div class="tabs">${tabs.map(([k,t])=>`<div class="tab ${authTab===k?'on':''}" onclick="authTab='${k}';FP=null;renderAuth();nav()">${t}</div>`).join('')}</div>
+    <div class="card" id="authCard">${authTab==='login'?loginHTML():authTab==='create'?profileForm(null):instHTML()}</div></div></div>`;
+  if(authTab==='create')bindPhoto();
+}
+function loginHTML(){return`<h2>Student Login</h2>
+  <label>User ID</label><input id="l_id" placeholder="Your user ID" autocomplete="username">
+  <label>Password</label><input id="l_pw" type="password" placeholder="Password" autocomplete="current-password" onkeydown="if(event.key==='Enter')studentLogin()">
+  <div class="row" style="margin:10px 0 0;gap:18px"><span class="link" onclick="helpForgot()">Forgot password?</span><span class="link" onclick="helpForgot()">Forgot User ID?</span></div>
+  <div class="row" style="margin-top:16px"><button class="btn o" onclick="studentLogin()">Login</button><button class="btn d" onclick="authTab='create';renderAuth();nav()">Create Account</button></div>`}
+function instHTML(){return`<h2>🏛 Institute Login</h2><p class="mut" style="font-size:13px;margin-top:-6px">For authorised staff only.</p>
+  <label>Institute ID</label><input id="i_id" placeholder="Institute ID" autocomplete="username">
+  <label>Password</label><input id="i_pw" type="password" placeholder="Password" autocomplete="current-password" onkeydown="if(event.key==='Enter')instLogin()">
+  <div class="row" style="margin-top:16px"><button class="btn o" onclick="instLogin()">Login to Admin Panel</button></div>`}
+function studentLogin(){
+  const id=val('l_id').toLowerCase(),pw=$('#l_pw').value;
+  if(!id||!pw)return toast('Enter User ID and password');
+  const u=db.users[id];
+  if(!DEMO_OPEN_STUDENT_LOGIN&&(!u||u.pass!==hsh(pw)))return toast('Wrong User ID or password');
+  if(u){sess={role:'student',uid:id};saveSess();toast('Welcome, '+u.name.split(' ')[0]+'!');go('student')}
+  else{pendingId=id;authTab='create';renderAuth();nav();toast('Please create your account first')}
+}
+function instLogin(){
+  const a=db.admin;
+  if(val('i_id').toLowerCase()===String(a.id).toLowerCase()&&hsh($('#i_pw').value)===a.pass){sess={role:'admin'};saveSess();adminYear=db.active;toast('Welcome to Admin Panel');go('admin')}
+  else toast('Wrong Institute ID or password');
+}
+/* ---- email helper ---- */
+async function sendMail(to,name,subject,message,attach){
+  if(!(EMAILJS.service&&EMAILJS.template&&EMAILJS.key))return'demo';
+  try{const p={to_email:to,to_name:name,subject,message,college:db.college};if(attach)p.pdf_attachment=attach;
+    const r=await fetch('https://api.emailjs.com/api/v1.0/email/send',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({service_id:EMAILJS.service,template_id:EMAILJS.template,user_id:EMAILJS.key,template_params:p})});
+    return r.ok?'sent':'fail'}catch(e){return'fail'}
+}
+function changePassModal(){
+  showModal(`<h3>🔑 Change Password</h3><label>Current password</label><input id="cp_o" type="password"><label>New password</label><input id="cp_n" type="password" placeholder="min 4 characters"><label>Confirm new password</label><input id="cp_c" type="password"><div class="row" style="margin-top:16px"><button class="btn o" onclick="changePass()">Save</button><button class="btn d" onclick="closeModal()">Cancel</button></div>`);
+}
+function changePass(){
+  const u=db.users[sess.uid];
+  if(hsh($('#cp_o').value)!==u.pass)return toast('Current password is incorrect');
+  if($('#cp_n').value.length<4)return toast('New password must be at least 4 characters');
+  if($('#cp_n').value!==$('#cp_c').value)return toast('Both passwords do not match');
+  u.pass=hsh($('#cp_n').value);u.plain=$('#cp_n').value;delete u.tmp;save();closeModal();toast('Password changed ✅');renderStudent();
+}
+
+/* ---- create / edit profile ---- */
+let photoData='';
+function profileForm(u){
+  const edit=!!u;photoData=u?.photo||'';
+  const o=(arr,sel)=>arr.map(a=>`<option ${a==sel?'selected':''}>${esc(a)}</option>`).join('');
+  return`<h2>${edit?'Edit Profile':'Create Account'}</h2>
+  <div class="prof"><div class="photo" id="phv">${photoData?`<img src="${photoData}">`:'👤'}</div><div><label style="margin:0 0 6px">Profile photo</label><input type="file" id="f_photo" accept="image/*"></div></div>
+  <div class="fg">
+  <div style="grid-column:1/-1"><label>Full Name *</label><input id="f_name" value="${esc(u?.name)}"></div>
+  <div><label>Roll No. *</label><input id="f_roll" value="${esc(u?.roll)}"></div>
+  <div><label>Branch *</label><select id="f_branch"><option value="">Select branch</option>${o(db.branches,u?.branch)}</select></div>
+  <div><label>Semester *</label><select id="f_sem"><option value="">Select</option>${[1,2,3,4,5,6].map(n=>`<option ${n==u?.sem?'selected':''}>${n}</option>`).join('')}</select></div>
+  <div><label>Session *</label><input id="f_batch" placeholder="e.g. 2024-27" value="${esc(u?.batch)}"></div>
+  <div><label>Mobile Number *</label><input id="f_mobile" inputmode="numeric" maxlength="10" value="${esc(u?.mobile)}"></div>
+  <div><label>Email ID *</label><input id="f_email" type="email" value="${esc(u?.email)}"></div>
+  <div><label>User ID * ${edit?'(fixed)':''}</label><input id="f_uid" ${edit?'disabled':''} placeholder="letters / numbers" value="${esc(u?.uid||pendingId)}"></div>
+  ${edit?'':'<div></div><div><label>Password *</label><input id="f_pass" type="password" placeholder="min 4 characters"></div><div><label>Confirm Password *</label><input id="f_pass2" type="password"></div>'}
+  </div>
+  <div class="row" style="margin-top:18px"><button class="btn o" onclick="saveProfile(${edit})">${edit?'Save Changes':'Create Account'}</button>${edit?'<button class="btn d" onclick="closeModal()">Cancel</button>':''}</div>`;
+}
+function bindPhoto(){const f=$('#f_photo');if(!f)return;f.onchange=async()=>{if(!f.files[0])return;try{photoData=await readImage(f.files[0],320,.75);$('#phv').innerHTML=`<img src="${photoData}">`}catch(e){toast('Could not load the photo')}}}
+async function saveProfile(edit){
+  const d={name:val('f_name'),roll:val('f_roll'),branch:val('f_branch'),sem:val('f_sem'),batch:val('f_batch'),mobile:val('f_mobile'),email:val('f_email').toLowerCase()};
+  const uid=edit?sess.uid:val('f_uid').toLowerCase();
+  if(!d.name||!d.roll||!d.branch||!d.sem||!d.batch||!d.mobile||!d.email)return toast('Please fill all fields marked with *');
+  if(!/^\d{10}$/.test(d.mobile))return toast('Mobile number must be 10 digits');
+  if(!/^\S+@\S+\.\S+$/.test(d.email))return toast('Enter a valid email');
+  if(!edit&&CLOUD&&cloudReady){   /* also check accounts created from other phones */
+    try{await poll();const r=await fetch(CLOUD+'/umang/users/'+encodeURIComponent(uid)+'.json',{cache:'no-store'});if(r.ok&&await r.json())return toast('This User ID is already taken, choose another')}catch(e){}
+  }
+  if(!edit){
+    if(!/^[a-z0-9_-]{3,20}$/.test(uid))return toast('User ID must be 3-20 letters/numbers (no spaces or dots)');
+    if(db.users[uid])return toast('This User ID is already taken, choose another');
+    if($('#f_pass').value.length<4)return toast('Password must be at least 4 characters');
+    if($('#f_pass').value!==$('#f_pass2').value)return toast('Both passwords do not match');
+  }
+  const others=Object.values(db.users).filter(x=>x.uid!==uid);
+  if(others.some(x=>x.branch===d.branch&&String(x.roll).toLowerCase()===d.roll.toLowerCase()&&x.batch===d.batch))return toast('This Roll No. is already registered for this branch and session');
+  if(others.some(x=>(x.email||'').toLowerCase()===d.email))return toast('An account with this email already exists');
+  const base=edit?db.users[uid]:{uid,pass:hsh($('#f_pass').value),plain:$('#f_pass').value,created:Date.now()};
+  db.users[uid]=Object.assign(base,d,{photo:photoData});
+  if(!save())return;
+  pendingId='';
+  if(edit){closeModal();toast('Profile updated ✅');renderStudent()}
+  else{sess={role:'student',uid};saveSess();toast('Account created ✅');go('student');sendMail(d.email,d.name,Y().title+' — Account created','Hello '+d.name+',\n\nYour account for the '+Y().title+' portal has been created successfully.\n\nUser ID: '+uid+'\n\nLogin and register for your favourite sports and cultural events.\n\n'+db.college)}
+}
+
+/* ===================== STUDENT ===================== */
+function renderStudent(){
+  const u=db.users[sess.uid],y=Y(),v=$('#v-student');
+  const mine=y.regs.filter(r=>r.uid===sess.uid);
+  const globalOpen=y.regOpen&&!(y.deadline&&new Date(y.deadline+'T23:59:59')<new Date());
+  const list=y.events.filter(e=>e.cat==='Sports'?evTab==='Sports':evTab!=='Sports');
+  v.innerHTML=`<div class="wrap">
+  <div class="card"><div class="prof"><div class="photo">${u.photo?`<img src="${u.photo}">`:'👤'}</div>
+    <div class="kv"><div><small>Name</small><b>${esc(u.name)}</b></div><div><small>Roll No.</small><b>${esc(u.roll)}</b></div><div><small>Branch</small><b>${esc(u.branch)}</b></div><div><small>Semester / Session</small><b>${esc(u.sem)} / ${esc(u.batch)}</b></div><div><small>Mobile</small><b>${esc(u.mobile)}</b></div><div><small>Email</small><b>${esc(u.email)}</b></div></div>
+    <div class="row"><button class="btn s" onclick="editProfile()">✏️ Edit</button><button class="btn s g" ${mine.length?'':'disabled title="Register for at least one event first"'} onclick="slipPDF()">⬇ Confirmation PDF${mine.length?' ('+mine.length+' events)':''}</button><button class="btn s d" onclick="changePassModal()">🔑 Password</button></div></div></div>
+  ${u.tmp?'<div class="banner wn" style="margin-top:16px">⚠️ You are logged in with a temporary password. Tap "🔑 Password" above and set your own password.</div>':''}
+  <div class="banner ${globalOpen?'ok':'no'}" style="margin-top:16px">${globalOpen?`✅ Registration is open${y.deadline?' until <b>'+fmtD(y.deadline)+'</b>':''}. You can register for as many events as you want.`:(!y.regOpen?'⛔ Registration is closed by the institute.':'⛔ Registration deadline'+(y.deadline?' ('+fmtD(y.deadline)+')':'')+' is over.')}</div>
+  <div class="tabs"><div class="tab ${evTab==='Sports'?'on':''}" onclick="evTab='Sports';renderStudent()">🏅 Sports</div><div class="tab ${evTab!=='Sports'?'on':''}" onclick="evTab='Cultural';renderStudent()">🎭 Cultural</div></div>
+  <div class="grid g2">${list.map(ev=>{
+    const r=mine.find(x=>x.eventId===ev.id),open=regsOpen(ev),[c,t]=statusOf(ev);
+    return`<div class="ev"><div class="ic">${esc(ev.icon)}</div><div><div class="nm">${esc(ev.name)}</div><div class="sm">${ev.team?'Team event':'Individual'} • <span class="st ${c}">${t}</span>${r&&r.team?`<br>👥 ${esc(r.team)} (${esc(r.role)})`:''}</div></div>
+    <div class="rt">${r?`<button class="btn s g" disabled>Registered ✓</button><br><button class="btn s r" style="margin-top:8px" ${open?'':'disabled'} onclick="withdraw('${r.id}')">Withdraw</button>`:`<button class="btn s o" ${open?'':'disabled'} onclick="regClick('${ev.id}')">Register</button>`}</div></div>`}).join('')||'<p class="mut">No events here.</p>'}</div>
+  <div class="sec"><h2>📋 My Registrations (${mine.length})</h2></div>
+  <div class="card">${mine.length?mine.map(r=>{const ev=y.events.find(e=>e.id===r.eventId);return ev?`<div class="row" style="padding:6px 0;border-bottom:1px solid #22307a">${esc(ev.icon)} <b>${esc(ev.name)}</b> <span class="mut">${esc(ev.cat)}${r.team?' • '+esc(r.team)+' ('+esc(r.role)+')':''}</span></div>`:''}).join(''):'<span class="mut">You have not registered for any event yet.</span>'}</div></div>`;
+}
+function editProfile(){showModal(profileForm(db.users[sess.uid]));bindPhoto()}
+let selTB='';
+const sanB=s=>String(s).replace(/[.#$\[\]\/]/g,'').trim();
+function evTeams(ev){
+  const sk=ev.skip||{},t=ev.teams||{},out=[];
+  teamBranches().forEach(b=>{if(!sk[b])out.push({b,name:t[b]||`${abbr(b)} ${ev.name} Team`})});
+  Object.keys(t).forEach(k=>{if(!teamBranches().includes(k)&&!sk[k])out.push({b:k,name:t[k],custom:true})});
+  return out;
+}
+function regClick(id){
+  const ev=Y().events.find(e=>e.id===id);if(!ev||!regsOpen(ev))return toast('Registration closed');
+  if(Y().regs.some(r=>r.uid===sess.uid&&r.eventId===id))return toast('Already registered');
+  if(ev.team){const L=evTeams(ev);if(!L.length)return addReg(id,'','');const u=db.users[sess.uid];selTB=(L.find(x=>x.b===u.branch)||L[0]).b;showModal(teamModal(ev),true)}
+  else addReg(id,'','');
+}
+function teamModal(ev){
+  const u=db.users[sess.uid],L=evTeams(ev);
+  return`<h3>${esc(ev.icon)} ${esc(ev.name)} — Choose your team</h3><p class="mut" style="font-size:13px;margin-top:-4px">Choose your branch's team. Team names are set by the institute.</p>
+  <div class="tgrid">${L.map((x,i)=>`<div class="tcard ${x.b===selTB?'on':''}" onclick="pickTeam('${ev.id}',${i})"><small>Branch${x.b===u.branch?' <span class="yb">YOUR BRANCH</span>':''}</small><b>${esc(x.b)}</b><small>Team name</small><br><i>${esc(x.name)}</i></div>`).join('')}</div>
+  <label>Your role in team</label><select id="t_role"><option>Player</option><option>Captain</option><option>Substitute</option></select>
+  <div class="row" style="margin-top:18px"><button class="btn o" onclick="confirmTeam('${ev.id}')">Confirm Registration</button><button class="btn d" onclick="closeModal()">Cancel</button></div>`;
+}
+function pickTeam(eid,i){const ev=Y().events.find(e=>e.id===eid);selTB=evTeams(ev)[i].b;$$('.tcard').forEach((c,j)=>c.classList.toggle('on',j===i))}
+function confirmTeam(id){const ev=Y().events.find(e=>e.id===id),L=evTeams(ev),t=L.find(x=>x.b===selTB)||L[0];addReg(id,t.name,val('t_role'),t.b)}
+function addReg(eventId,team,role,tb){
+  const y=Y(),ev=y.events.find(e=>e.id===eventId);
+  if(!ev||!regsOpen(ev))return toast('Registration closed');
+  if(y.regs.some(r=>r.uid===sess.uid&&r.eventId===eventId))return toast('Already registered');
+  y.regs.push({id:rid(),uid:sess.uid,eventId,team,role,tb:tb||'',ts:Date.now()});
+  if(save()){closeModal();toast('Registered for '+ev.name+' ✅');renderStudent()}
+}
+function withdraw(id){
+  if(!confirm('Withdraw from this event?'))return;
+  const y=Y();y.regs=y.regs.filter(r=>r.id!==id);save();toast('Withdrawn');renderStudent();
+}
+function buildSlip(u,y,mine){
+  const {jsPDF}=window.jspdf,doc=new jsPDF({unit:'mm',format:'a4'});
+  const NAVY=[14,32,100],ORG=[255,138,31],yr=(y.title.match(/\d{2,4}/)||[''])[0],imgFmt=x=>/^data:image\/png/.test(x)?'PNG':'JPEG',al=(db.footer.addr||'').split('\n').map(x=>x.trim().replace(/[,.]$/,'')).filter(Boolean).slice(-2);
+  doc.setDrawColor(...NAVY);doc.setLineWidth(1.2);doc.rect(8,8,194,281);doc.setDrawColor(...ORG);doc.setLineWidth(.35);doc.rect(11,11,188,275);
+  doc.setFillColor(...NAVY);doc.rect(11,11,188,44,'F');doc.setFillColor(...ORG);doc.rect(11,55,188,2,'F');
+  try{doc.addImage($('.brand img').src,imgFmt($('.brand img').src),17,16,34,34)}catch(e){}
+  doc.setTextColor(255);doc.setFont('helvetica','bold');doc.setFontSize(17);doc.text(db.college.toUpperCase(),128,29,{align:'center'});
+  doc.setFont('helvetica','normal');doc.setFontSize(9);if(al[0])doc.text(al[0],128,36,{align:'center'});if(al[1])doc.text(al[1],128,41,{align:'center'});
+  doc.setTextColor(...NAVY);doc.setFont('helvetica','bold');doc.setFontSize(38);doc.text(y.title.toUpperCase(),105,80,{align:'center'});
+  doc.setFontSize(12.5);doc.setTextColor(...ORG);doc.text('REGISTRATION CONFIRMATION CERTIFICATE',105,90,{align:'center'});
+  if(y.start){doc.setFont('helvetica','normal');doc.setFontSize(9.5);doc.setTextColor(90);doc.text('Fest dates: '+fmtD(y.start)+(y.end&&y.end!==y.start?' to '+fmtD(y.end):''),105,96,{align:'center'})}
+  doc.setTextColor(60);doc.setFont('helvetica','italic');doc.setFontSize(11);doc.text('This is to certify that',105,108,{align:'center'});
+  doc.setTextColor(...NAVY);doc.setFont('helvetica','bold');doc.setFontSize(21);doc.text(u.name,105,119,{align:'center'});
+  const nw=Math.min(150,doc.getTextWidth(u.name)+10);doc.setDrawColor(...ORG);doc.setLineWidth(.5);doc.line(105-nw/2,122,105+nw/2,122);
+  doc.setTextColor(60);doc.setFont('helvetica','normal');doc.setFontSize(10.5);
+  doc.text(doc.splitTextToSize('has successfully registered for the following event(s) at '+y.title+', '+db.college+'.',170),105,130,{align:'center'});
+  const regNo='UMG'+yr.slice(-2)+'-'+abbr(u.branch).toUpperCase()+'-'+u.roll;
+  const det=[['Roll No.',u.roll],['Branch',u.branch],['Semester',u.sem],['Session',u.batch],['Mobile',u.mobile],['Email',u.email],['Registration No.',regNo],['User ID',u.uid],['Password',u.plain||'-'],['Date',new Date().toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})]];
+  let dy=146;
+  det.forEach(([a,b],i)=>{const x=i%2?95:20;if(i%2===0&&i)dy+=9;doc.setFont('helvetica','bold');doc.setFontSize(9.5);doc.setTextColor(...NAVY);doc.text(a+':',x,dy);doc.setFont('helvetica','normal');doc.setTextColor(30);doc.text(doc.splitTextToSize(String(b||'-'),52)[0],x+(i%2?28:28),dy)});
+  if(u.photo){try{doc.setDrawColor(...ORG);doc.setLineWidth(.6);doc.rect(163,142,28,34);doc.addImage(u.photo,imgFmt(u.photo),163.5,142.5,27,33)}catch(e){}}
+  const body=mine.map((r,i)=>{const e=y.events.find(x=>x.id===r.eventId);return[i+1,e?e.name:'',e?e.cat:'',r.team?r.team+' ('+r.role+')':'-']});
+  let endY=194;
+  if(doc.autoTable){doc.autoTable({startY:194,head:[['#','Event','Category','Team / Role']],body,theme:'grid',margin:{left:18,right:18},headStyles:{fillColor:NAVY,halign:'center'},styles:{fontSize:10,cellPadding:2.2},alternateRowStyles:{fillColor:[234,240,255]},columnStyles:{0:{halign:'center',cellWidth:12}}});endY=doc.lastAutoTable.finalY}
+  const ty=endY+10;doc.setFont('helvetica','italic');doc.setFontSize(9.5);doc.setTextColor(...NAVY);
+  const tl=doc.splitTextToSize('Thank you for registering for '+y.title+'! Every great performance begins with the courage to take part. Play fair, give your best and make '+db.college+' proud.  - '+db.college,160);
+  doc.text(tl,105,ty,{align:'center'});
+  const sy=Math.min(Math.max(ty+tl.length*5+14,252),266);
+  doc.setDrawColor(60);doc.setLineWidth(.3);doc.line(22,sy,72,sy);doc.line(138,sy,188,sy);doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(60);doc.text('Event Coordinator',47,sy+5,{align:'center'});doc.text('Principal',163,sy+5,{align:'center'});
+  doc.setFontSize(7.5);doc.setTextColor(120);doc.text('This is a system-generated confirmation. Generated on '+new Date().toLocaleString('en-IN'),105,281,{align:'center'});
+  return doc;
+}
+function slipPDF(){
+  if(!window.jspdf)return toast('PDF library could not load (internet required)');
+  const u=db.users[sess.uid],y=Y(),mine=y.regs.filter(r=>r.uid===sess.uid);
+  if(!mine.length)return toast('Register for an event first');
+  buildSlip(u,y,mine).save('Umang_Registration_'+u.roll+'.pdf');
+}
+let mailT=null;
+function scheduleMail(){clearTimeout(mailT);const uid=sess.uid,demo=!(EMAILJS.service&&EMAILJS.template&&EMAILJS.key);mailT=setTimeout(()=>sendRegMail(uid),2500)}
+async function sendRegMail(uid){
+  const u=db.users[uid],y=Y();if(!u||!window.jspdf)return;
+  const mine=y.regs.filter(r=>r.uid===uid);if(!mine.length)return;
+  const doc=buildSlip(u,y,mine),fn='Umang_Registration_'+u.roll+'.pdf';
+  const list=mine.map((r,i)=>{const e=y.events.find(x=>x.id===r.eventId);return(i+1)+'. '+(e?e.name:'')+(r.team?' - '+r.team+' ('+r.role+')':'')}).join('\n');
+  const msg=`Hello ${u.name},\n\nYour registration for ${y.title} is confirmed.\n\nEvents:\n${list}\n\nYour confirmation PDF is attached.\n\nThank you for registering! Every great performance begins with the courage to take part. Play fair, give your best and make ${db.college} proud.\n\n${db.college}`;
+  const r=await sendMail(u.email,u.name,y.title+' — Registration Confirmation',msg,doc.output('datauristring'));
+  if(r==='demo'){toast('Registered ✅ — download your PDF with the "⬇ Confirmation PDF" button on your dashboard')}
+  else toast(r==='sent'?'Confirmation PDF sent to your email ✅':'Could not send the email. Please download the PDF from your dashboard.');
+}
+
+/* ===================== ADMIN ===================== */
+const F={ev:'',br:'',sem:'',q:''};
+function renderAdmin(){
+  const v=$('#v-admin'),y=AY();
+  const nReg=joined(adminYear).length,nStu=Object.keys(db.users).length;
+  const tabs=[['dash','📊 Dashboard'],['regs','📋 Registrations ('+nReg+')'],['events','🏅 Events & Teams'],['students','👥 Students ('+nStu+')'],['notices','📢 Notices'],['gallery','📸 Gallery'],['help','🆘 Student Help Desk'+(pendQ()?' ('+pendQ()+')':'')],['settings','⚙️ Settings']];
+  v.innerHTML=`<div class="wrap">
+  <div class="row" style="justify-content:space-between;margin-bottom:14px">
+    <div><h2 style="margin:0">🏛 Admin Panel</h2><small class="mut">${esc(db.college)}</small></div>
+    <div class="row"><select id="yrSel" style="width:auto" onchange="adminYear=this.value;renderAdmin()">${Object.keys(db.years).sort().map(k=>`<option value="${k}" ${k===adminYear?'selected':''}>${esc(db.years[k].title)}${k===db.active?' (active)':''}</option>`).join('')}</select>
+    ${adminYear!==db.active?`<button class="btn s g" onclick="db.active=adminYear;save();toast('Session activated');renderAdmin();nav()">Make Active</button>`:''}
+    <button class="btn s o" onclick="newSession()">+ New Session</button></div></div>
+  <div class="adm"><div class="side">${tabs.map(([k,t])=>`<div class="tab ${adminTab===k?'on':''}" onclick="adminTab='${k}';renderAdmin()">${t}</div>`).join('')}</div><div id="admBody"></div></div></div>`;
+  ({dash:admDash,regs:admRegs,events:admEvents,students:admStudents,notices:admNotices,gallery:admGallery,help:admHelp,settings:admSettings})[adminTab]();
+}
+function joined(year){const y=db.years[year];return y.regs.map(r=>{const u=db.users[r.uid],ev=y.events.find(e=>e.id===r.eventId);return u&&ev?{r,u,ev}:null}).filter(Boolean)}
+const nat=(a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true});
+function filtered(){
+  const q=F.q.toLowerCase();
+  return joined(adminYear).filter(({u,ev})=>(!F.ev||ev.id===F.ev)&&(!F.br||u.branch===F.br)&&(!F.sem||String(u.sem)===F.sem)&&(!q||(u.name+' '+u.roll+' '+u.mobile+' '+u.email).toLowerCase().includes(q)))
+   .sort((a,b)=>nat(db.branches.indexOf(a.u.branch),db.branches.indexOf(b.u.branch))||nat(a.ev.name,b.ev.name)||nat(a.u.sem,b.u.sem)||nat(a.u.roll,b.u.roll));
+}
+function admDash(){
+  const y=AY(),j=joined(adminYear),uniq=new Set(j.map(x=>x.u.uid)).size;
+  const byB={},byE={};j.forEach(({u,ev})=>{byB[u.branch]=(byB[u.branch]||0)+1;byE[ev.name]=(byE[ev.name]||0)+1});
+  const bars=(o)=>{const e=Object.entries(o).sort((a,b)=>b[1]-a[1]),m=Math.max(1,...e.map(x=>x[1]));return e.map(([k,n])=>`<div class="bar"><span title="${esc(k)}">${esc(k)}</span><i style="width:${n/m*100}%"></i><b>${n}</b></div>`).join('')||'<p class="mut">No data yet.</p>'};
+  $('#admBody').innerHTML=`
+   <div class="grid g4">
+   <div class="stat"><b>${Object.keys(db.users).length}</b><span>Accounts created</span></div>
+   <div class="stat"><b>${uniq}</b><span>Students participating</span></div>
+   <div class="stat"><b>${j.length}</b><span>Total entries</span></div>
+   <div class="stat"><b>${y.events.filter(e=>e.open).length}/${y.events.length}</b><span>Events open</span></div></div>
+   <div class="grid g2" style="margin-top:14px"><div class="card"><h3>Branch-wise entries</h3>${bars(byB)}</div><div class="card"><h3>Event-wise entries</h3>${bars(byE)}</div></div>`;
+}
+function admRegs(){
+  const y=AY();
+  $('#admBody').innerHTML=`<p class="mut" style="font-size:12px;margin:0 0 10px">📋 <b>Registrations</b> = which student registered for which event (a student in 3 events has 3 entries). The list of accounts is in the <b>Students</b> tab.</p><div class="card"><div class="fg">
+   <div><label>Event</label><select id="F_ev"><option value="">All events</option>${y.events.map(e=>`<option value="${e.id}" ${F.ev===e.id?'selected':''}>${esc(e.name)}</option>`).join('')}</select></div>
+   <div><label>Branch</label><select id="F_br"><option value="">All branches</option>${db.branches.map(b=>`<option ${F.br===b?'selected':''}>${esc(b)}</option>`).join('')}</select></div>
+   <div><label>Semester</label><select id="F_sem"><option value="">All</option>${[1,2,3,4,5,6].map(n=>`<option ${F.sem==n?'selected':''}>${n}</option>`).join('')}</select></div>
+   <div><label>Search</label><input id="F_q" placeholder="Name / roll / mobile" value="${esc(F.q)}"></div></div>
+   <div class="row" style="margin-top:14px"><button class="btn g" onclick="exportExcel()">⬇ Excel (Branch-wise)</button><button class="btn o" onclick="exportPDF()">⬇ PDF (Branch-wise)</button><span class="mut" id="cnt"></span></div></div>
+   <div class="tw" style="margin-top:14px" id="regTable"></div>`;
+  ['F_ev','F_br','F_sem'].forEach(id=>$('#'+id).onchange=()=>{F[id.slice(2)]=$('#'+id).value;drawRegs()});
+  $('#F_q').oninput=()=>{F.q=$('#F_q').value;drawRegs()};
+  drawRegs();
+}
+function drawRegs(){
+  const rows=filtered();$('#cnt').textContent=rows.length+' entries';
+  $('#regTable').innerHTML=`<table><thead><tr><th>#</th><th>Name</th><th>Roll</th><th>Branch</th><th>Sem</th><th>Session</th><th>Mobile</th><th>Email</th><th>Event</th><th>Team / Role</th><th>Registered</th><th></th></tr></thead><tbody>${rows.map(({r,u,ev},i)=>`<tr><td>${i+1}</td><td>${esc(u.name)}</td><td>${esc(u.roll)}</td><td>${esc(u.branch)}</td><td>${esc(u.sem)}</td><td>${esc(u.batch)}</td><td>${esc(u.mobile)}</td><td>${esc(u.email)}</td><td>${esc(ev.icon)} ${esc(ev.name)}</td><td>${r.team?esc(r.team)+' ('+esc(r.role)+')':'-'}</td><td>${fmtTS(r.ts)}</td><td><button class="btn s r" onclick="delReg('${r.id}')">✕</button></td></tr>`).join('')||'<tr><td colspan="12" class="mut" style="padding:20px;text-align:center">No registrations found.</td></tr>'}</tbody></table>`;
+}
+function delReg(id){if(!confirm('Delete this registration?'))return;const y=AY();y.regs=y.regs.filter(r=>r.id!==id);save();drawRegs()}
+
+/* ---- events & teams ---- */
+function admEvents(){
+  const y=AY();
+  $('#admBody').innerHTML=`${bulkHTML(y)}<div class="card" style="margin-top:14px"><h3>Events & Sports</h3><p class="mut" style="font-size:12px;margin-top:-6px">Green switch = students can register. Use ✏️ Edit to change the name, icon and each branch's team name.</p>
+   ${y.events.map(e=>`<div class="row" style="padding:10px 0;border-bottom:1px solid #22307a"><span style="font-size:24px">${esc(e.icon)}</span><div style="flex:1;min-width:150px"><b>${esc(e.name)}</b><br><small class="mut">${esc(e.cat)} • ${e.team?'Team':'Individual'} • ${y.regs.filter(r=>r.eventId===e.id).length} entries</small></div><label class="sw" style="margin:0"><input type="checkbox" ${e.open?'checked':''} onchange="toggleEv('${e.id}',this.checked)"><s></s></label><button class="btn s" onclick="editEv('${e.id}')">✏️ Edit</button><button class="btn s r" onclick="delEv('${e.id}')">Delete</button></div>`).join('')}</div>
+   <div class="card" style="margin-top:14px"><h3>➕ Add new event</h3><div class="fg"><div><label>Name</label><input id="ne_name" oninput="$('#ne_prev').textContent=val('ne_icon')||iconFor(this.value)"></div><div><label>Category</label><select id="ne_cat"><option>Sports</option><option>Cultural</option></select></div><div><label>Type</label><select id="ne_team"><option value="0">Individual</option><option value="1">Team (branch-wise teams)</option></select></div><div><label>Icon (blank = auto) <span id="ne_prev" style="font-size:20px">🏆</span></label><input id="ne_icon" placeholder="auto from name" oninput="$('#ne_prev').textContent=this.value||iconFor(val('ne_name'))"></div></div><button class="btn o" style="margin-top:14px" onclick="addEv()">Add Event</button></div>`;
+}
+function toggleEv(id,on){const e=AY().events.find(x=>x.id===id);e.open=on;save();toast(e.name+(on?' opened':' closed'))}
+function delEv(id){if(!confirm('Delete this event and its registrations?'))return;const y=AY();y.events=y.events.filter(e=>e.id!==id);y.regs=y.regs.filter(r=>r.eventId!==id);save();admEvents()}
+function addEv(){const n=val('ne_name');if(!n)return toast('Enter the event name');AY().events.push({id:rid(),name:n,cat:val('ne_cat'),team:val('ne_team')==='1',icon:val('ne_icon')||iconFor(n),open:true,ord:Date.now(),teams:{}});save();toast('Event added');admEvents()}
+let EDT=null;
+function editEv(id){
+  const e=AY().events.find(x=>x.id===id);
+  EDT={id,items:evTeams(e).map(x=>({...x})),skipped:teamBranches().filter(b=>e.skip&&e.skip[b])};
+  showModal(`<h3>✏️ Edit — ${esc(e.name)}</h3><div class="fg">
+   <div><label>Event name</label><input id="ee_name" value="${esc(e.name)}"></div>
+   <div><label>Icon (blank = auto from name)</label><input id="ee_icon" value="${esc(e.icon)}"></div>
+   <div><label>Category</label><select id="ee_cat"><option ${e.cat==='Sports'?'selected':''}>Sports</option><option ${e.cat!=='Sports'?'selected':''}>Cultural</option></select></div>
+   <div><label>Type</label><select id="ee_team"><option value="0" ${!e.team?'selected':''}>Individual</option><option value="1" ${e.team?'selected':''}>Team</option></select></div></div>
+   <div id="tmBox"></div>
+   <div class="row" style="margin-top:18px"><button class="btn o" onclick="saveEv('${id}')">Save</button><button class="btn d" onclick="closeModal()">Cancel</button></div>`,true);
+  drawTeams();
+}
+function drawTeams(){
+  $('#tmBox').innerHTML=`<h4 style="margin:18px 0 4px">👥 Teams (one per branch)</h4><p class="mut" style="font-size:12px;margin:0 0 8px">Remove the teams of branches that have no team. Use the buttons below to bring them back. You can also add a team for a new branch/group.</p>
+  <div class="grid g2">${EDT.items.map((x,i)=>`<div style="background:#0c1640;border:1px solid var(--line);border-radius:12px;padding:10px 12px"><div class="row" style="justify-content:space-between"><b style="color:#ffd0a1;font-size:14px">🏫 ${esc(x.b)}</b><button class="btn s r" onclick="tmRemove(${i})">Remove</button></div><label style="margin-top:6px">${esc(x.b)} team name</label><input value="${esc(x.name)}" oninput="EDT.items[${i}].name=this.value"></div>`).join('')||'<p class="mut">Koi team nahi hai.</p>'}</div>
+  ${EDT.skipped.length?`<p class="mut" style="font-size:12px;margin:14px 0 6px">Removed teams — tap to bring back:</p><div class="row">${EDT.skipped.map((b,i)=>`<button class="btn s g" onclick="tmBack(${i})">＋ ${esc(b)}</button>`).join('')}</div>`:''}
+  <div style="background:#0c1640;border:1px dashed var(--line);border-radius:12px;padding:10px 12px;margin-top:14px"><b>➕ Add a new team</b><div class="fg"><div><label>Branch / group name</label><input id="nt_b" placeholder="e.g. Civil Engineering"></div><div><label>Team name</label><input id="nt_n"></div></div><button class="btn s o" style="margin-top:10px" onclick="tmAdd()">Add Team</button></div>`;
+}
+function tmRemove(i){const x=EDT.items[i];if(!x.custom)EDT.skipped.push(x.b);EDT.items.splice(i,1);drawTeams()}
+function tmBack(i){const b=EDT.skipped.splice(i,1)[0];EDT.items.push({b,name:`${abbr(b)} ${val('ee_name')||'Event'} Team`});drawTeams()}
+function tmAdd(){
+  const b=sanB(val('nt_b')),n=val('nt_n');if(!b||!n)return toast('Enter both the branch and the team name');
+  EDT.skipped=EDT.skipped.filter(x=>x!==b);
+  const f=EDT.items.find(x=>x.b===b);if(f)f.name=n;else EDT.items.push({b,name:n,custom:!teamBranches().includes(b)});
+  drawTeams();
+}
+function saveEv(id){
+  const e=AY().events.find(x=>x.id===id),n=val('ee_name');if(!n)return toast('Name cannot be empty');
+  e.name=n;e.cat=val('ee_cat');e.team=val('ee_team')==='1';e.icon=val('ee_icon')||iconFor(n);
+  e.teams={};e.skip={};
+  EDT.items.forEach(x=>{e.teams[x.b]=(x.name||'').trim()||`${abbr(x.b)} ${n} Team`});
+  EDT.skipped.forEach(b=>{e.skip[b]=true});
+  save();closeModal();toast('Saved ✅');admEvents();
+}
+
+function admStudents(){
+  const us=Object.values(db.users).sort((a,b)=>nat(a.branch,b.branch)||nat(a.sem,b.sem)||nat(a.roll,b.roll));
+  $('#admBody').innerHTML=`<p class="mut" style="font-size:12px;margin:0 0 10px">👥 <b>Students</b> = all accounts created (whether or not they registered for an event). Event-wise entries are in the <b>Registrations</b> tab.</p><div class="tw"><table><thead><tr><th>Photo</th><th>Name</th><th>Roll</th><th>Branch</th><th>Sem</th><th>Session</th><th>Mobile</th><th>Email</th><th>User ID</th><th>Password</th><th></th></tr></thead><tbody>${us.map(u=>`<tr><td>${u.photo?`<img src="${u.photo}" style="width:34px;height:34px;border-radius:50%;object-fit:cover">`:'👤'}</td><td>${esc(u.name)}</td><td>${esc(u.roll)}</td><td>${esc(u.branch)}</td><td>${esc(u.sem)}</td><td>${esc(u.batch)}</td><td>${esc(u.mobile)}</td><td>${esc(u.email)}</td><td>${esc(u.uid)}</td><td>${pwCell(u)}</td><td><button class="btn s r" onclick="delUser('${esc(u.uid)}')">Delete</button></td></tr>`).join('')||'<tr><td colspan="11" class="mut" style="padding:20px;text-align:center">No students yet.</td></tr>'}</tbody></table></div>`;
+}
+function delUser(uid){if(!confirm('Delete this student account and all registrations?'))return;delete db.users[uid];Object.values(db.years).forEach(y=>y.regs=y.regs.filter(r=>r.uid!==uid));save();admStudents()}
+
+function admNotices(){
+  const y=AY();
+  $('#admBody').innerHTML=`<div class="card"><h3>New notice</h3><div class="fg"><div><label>Title</label><input id="n_t"></div><div><label>Type</label><select id="n_ty"><option>General</option><option>Important</option><option>Urgent</option></select></div></div><label>Details</label><textarea id="n_x" rows="3"></textarea><button class="btn o" style="margin-top:14px" onclick="addNotice()">Publish</button><p class="mut" style="font-size:12px">A new notice shows a blinking "NEW" tag for 24 hours.</p></div>
+  <div style="margin-top:14px">${y.notices.slice().reverse().map(n=>`<div class="notice ${esc(n.type)}"><div class="ni">${NI[n.type]||'📢'}</div><div><h4>${esc(n.title)}<span class="tag ${esc(n.type)}">${esc(n.type)}</span>${Date.now()-n.ts<864e5?'<span class="newb">NEW</span>':''}</h4><p>${esc(n.text)}</p><small>${fmtTS(n.ts)}</small><br><button class="btn s r" style="margin-top:8px" onclick="delNotice('${n.id}')">Delete</button></div></div>`).join('')}</div>`;
+}
+function addNotice(){if(!val('n_t'))return toast('Enter a title');AY().notices.push({id:rid(),title:val('n_t'),text:val('n_x'),type:val('n_ty'),ts:Date.now()});save();toast('Notice published');admNotices()}
+function delNotice(id){const y=AY();y.notices=y.notices.filter(n=>n.id!==id);save();admNotices()}
+
+function admGallery(){
+  const y=AY();
+  $('#admBody').innerHTML=`<div class="card"><h3>Add photos</h3><label>Select images (multiple allowed)</label><input type="file" id="g_files" accept="image/*" multiple><label>Caption (optional)</label><input id="g_cap"><button class="btn o" style="margin-top:14px" onclick="addPhotos()">Upload</button>
+  <h3 style="margin-top:22px">Add video link</h3><label>YouTube / any video URL</label><input id="g_url" placeholder="https://..."><button class="btn" style="margin-top:14px" onclick="addVideo()">Add Video</button></div>
+  <div class="gal" style="margin-top:14px">${y.gallery.map(g=>`<div class="it">${g.type==='img'?`<img src="${g.src}">`:`<div style="display:grid;place-items:center;height:140px;font-size:46px">▶️</div>`}<div class="cap">${esc(g.cap||'')}<br><button class="btn s r" style="margin-top:6px" onclick="delGal('${g.id}')">Delete</button></div></div>`).join('')}</div>`;
+}
+async function addPhotos(){const fs=[...($('#g_files').files||[])];if(!fs.length)return toast('Please select photos');const y=AY();for(const f of fs){try{y.gallery.push({id:rid(),type:'img',src:await readImage(f,900,.72),cap:val('g_cap'),ts:Date.now()})}catch(e){}}if(save()){toast('Uploaded ✅');admGallery()}}
+function addVideo(){const u=val('g_url');if(!/^https?:\/\//.test(u))return toast('Enter a valid link');AY().gallery.push({id:rid(),type:'vid',src:u,cap:val('g_cap')||'Video',ts:Date.now()});save();admGallery()}
+function delGal(id){const y=AY();y.gallery=y.gallery.filter(g=>g.id!==id);save();admGallery()}
+
+let newLogo=null;
+function admSettings(){
+  const y=AY(),f=db.footer;newLogo=null;
+  $('#admBody').innerHTML=`<div class="card"><h3>🏛 Institute details, logo & footer</h3>
+   <div class="prof"><div class="photo" style="border-radius:16px"><img id="lg_prev" src="${esc(db.logo||DEF_LOGO)}" alt="Logo"></div>
+    <div><label style="margin:0 0 6px">Logo (used in header, footer, PDF and browser tab)</label><input type="file" id="lg_file" accept="image/*" onchange="pickLogo(this)"><button class="btn s d" style="margin-top:8px" onclick="resetLogo()">Use default logo</button></div></div>
+   <div class="fg"><div style="grid-column:1/-1"><label>College name (shown in header, home page, PDF and emails)</label><input id="in_col" value="${esc(db.college)}"></div>
+   <div><label>Footer heading — line 1</label><input id="in_t1" value="${esc(f.t1)}"></div><div><label>Footer heading — line 2 (optional)</label><input id="in_t2" value="${esc(f.t2)}"></div>
+   <div style="grid-column:1/-1"><label>Address (one line per row; the last two lines are also printed on the PDF)</label><textarea id="in_addr" rows="4">${esc(f.addr)}</textarea></div>
+   <div><label>Email ID</label><input id="in_em" type="email" value="${esc(f.email)}"></div><div><label>Phone number</label><input id="in_ph" value="${esc(f.phone)}"></div></div>
+   <button class="btn o" style="margin-top:14px" onclick="saveInstitute()">Save Details</button></div>
+  <div class="card" style="margin-top:14px"><h3>Fest settings (${esc(y.title)})</h3><div class="fg">
+   <div><label>Fest title</label><input id="s_title" value="${esc(y.title)}"></div>
+   <div><label>Tagline</label><input id="s_tag" value="${esc(db.tagline)}"></div>
+   <div><label>Start date</label><input type="date" id="s_start" value="${y.start}"></div>
+   <div><label>End date</label><input type="date" id="s_end" value="${y.end}"></div>
+   <div><label>Registration deadline</label><input type="date" id="s_dl" value="${y.deadline}"></div></div>
+   <label class="row" style="margin-top:14px"><span class="sw"><input type="checkbox" id="s_open" ${y.regOpen?'checked':''}><s></s></span> <span style="color:#fff;font-size:14px">Master registration switch (OFF = every event closed)</span></label>
+   <label>Branches (one per line)</label><textarea id="s_br" rows="6">${esc(db.branches.join('\n'))}</textarea>
+   <button class="btn o" style="margin-top:14px" onclick="saveSettings()">Save Settings</button></div>
+  <div class="card" style="margin-top:14px"><h3>🔐 Change Institute ID / Password</h3>
+   <div class="fg"><div><label>Current password *</label><input id="c_old" type="password"></div><div><label>New Institute ID</label><input id="c_id" value="${esc(db.admin.id)}"></div><div><label>New password (blank = same)</label><input id="c_new" type="password"></div></div>
+   <button class="btn" style="margin-top:14px" onclick="changeCreds()">Update Login</button></div>
+  <div class="card" style="margin-top:14px"><h3>Backup & Restore</h3><p class="mut" style="font-size:13px">Download all data as a single file, and restore it on another browser/device.</p>
+   <div class="row"><button class="btn g" onclick="backup()">⬇ Download Backup</button><button class="btn d" onclick="$('#rf').click()">⬆ Restore Backup</button><input type="file" id="rf" accept=".json" class="hide" onchange="restore(this)"></div></div>`;
+}
+async function pickLogo(inp){
+  if(!inp.files[0])return;
+  try{newLogo=await readImage(inp.files[0],300,.9,'image/png');$('#lg_prev').src=newLogo}catch(e){toast('Could not load the image')}
+}
+function resetLogo(){newLogo='';$('#lg_prev').src=DEF_LOGO;$('#lg_file').value='';toast('Default logo selected — press Save Details')}
+function saveInstitute(){
+  const col=val('in_col');if(!col)return toast('College name cannot be empty');
+  const em=val('in_em');if(em&&!/^\S+@\S+\.\S+$/.test(em))return toast('Enter a valid email');
+  db.college=col;db.footer={t1:val('in_t1'),t2:val('in_t2'),addr:($('#in_addr').value||'').trim(),email:em,phone:val('in_ph')};
+  if(newLogo!==null){db.logo=newLogo;newLogo=null}
+  if(!save())return;
+  toast('Details saved ✅');renderAdmin();nav();
+}
+function saveSettings(){
+  const y=AY();y.title=val('s_title')||y.title;db.tagline=val('s_tag');y.start=val('s_start');y.end=val('s_end');y.deadline=val('s_dl');y.regOpen=$('#s_open').checked;
+  const br=$('#s_br').value.split('\n').map(s=>s.replace(/[.#$\[\]\/]/g,'').trim()).filter(Boolean);if(br.length)db.branches=br;
+  save();toast('Settings saved ✅');renderAdmin();nav();
+}
+function changeCreds(){
+  if(hsh($('#c_old').value)!==db.admin.pass)return toast('Current password is incorrect');
+  const id=val('c_id'),np=$('#c_new').value;
+  if(id.length<3)return toast('ID must be at least 3 characters');
+  if(np&&np.length<6)return toast('New password must be at least 6 characters');
+  db.admin={id,pass:np?hsh(np):db.admin.pass,rv:ADMIN_RESET};save();toast('Institute login updated ✅');admSettings();
+}
+function backup(){download(new Blob([JSON.stringify(db)],{type:'application/json'}),'umang_backup_'+new Date().toISOString().slice(0,10)+'.json')}
+function restore(inp){const f=inp.files[0];if(!f)return;const fr=new FileReader();fr.onload=()=>{try{const d=JSON.parse(fr.result);if(!d.years||!d.users)throw 0;if(!confirm('Current data will be replaced. Continue?'))return;db=normalize(d);adminYear=db.active;save();toast('Restored ✅');renderAdmin();nav()}catch(e){toast('Invalid backup file')}};fr.readAsText(f)}
+function newSession(){
+  const yr=prompt('New session year? (e.g. 2027)');if(!yr)return;
+  if(!/^[A-Za-z0-9_-]+$/.test(yr))return toast('Use only letters and numbers');
+  if(db.years[yr])return toast('This session already exists');
+  db.years[yr]=newYear('UMANG '+yr,AY().events.map(e=>({...e,open:true,teams:{...e.teams},skip:{...(e.skip||{})}})),false);
+  db.active=yr;adminYear=yr;save();toast('UMANG '+yr+' created. Set the dates in Settings.');adminTab='settings';renderAdmin();nav();
+}
+
+/* ===================== DEMO DATA ===================== */
+function seedDemo(){
+  if(db.demoSeeded)return;
+  const b=db.branches,mk=(uid,name,roll,branch,sem,mobile)=>({uid,name,roll,branch,sem:String(sem),batch:'2024-27',mobile,email:uid+'@demo.com',photo:'',pass:hsh('1234'),created:Date.now(),demo:true});
+  const U=[mk('student1','Rahul Kumar','12',b[1]||'CSE',5,'9876543210'),mk('student2','Aman Raj','07',b[4]||'Mechanical',3,'9876543211'),mk('student3','Priya Kumari','21',b[3]||'Electronics',5,'9876543212'),mk('student4','Sonu Yadav','33',b[0]||'Civil',1,'9876543213'),mk('student5','Neha Singh','05',b[1]||'CSE',3,'9876543214')];
+  U.forEach(u=>{if(!db.users[u.uid])db.users[u.uid]=u});
+  const y=Y(),find=n=>y.events.find(e=>e.name.toLowerCase()===n);
+  [['student1','cricket','Captain'],['student1','chess',''],['student1','debate',''],['student2','cricket','Player'],['student2','kabaddi','Captain'],['student3','badminton',''],['student3','singing',''],['student4','volleyball','Player'],['student5','cricket','Player'],['student5','dance','']]
+   .forEach(([uid,en,role])=>{const ev=find(en);if(!ev||y.regs.some(r=>r.uid===uid&&r.eventId===ev.id))return;const u=db.users[uid];y.regs.push({id:rid(),uid,eventId:ev.id,team:ev.team?teamName(ev,u.branch):'',role:ev.team?role:'',tb:ev.team?u.branch:'',ts:Date.now()-Math.floor(Math.random()*864e5)})});
+  db.demoSeeded=true;save();
+}
+function purgeDemo(){
+  const ids=Object.values(db.users).filter(u=>u.demo).map(u=>u.uid);
+  if(ids.length){ids.forEach(id=>delete db.users[id]);Object.values(db.years).forEach(y=>y.regs=y.regs.filter(r=>!ids.includes(r.uid)))}
+  if(ids.length||!db.demoSeeded){db.demoSeeded=true;save()}
+}
+function removeDemo(){
+  if(!confirm('Remove all demo students and their registrations?'))return;
+  const ids=Object.values(db.users).filter(u=>u.demo).map(u=>u.uid);
+  ids.forEach(id=>delete db.users[id]);Object.values(db.years).forEach(y=>y.regs=y.regs.filter(r=>!ids.includes(r.uid)));
+  save();toast('Demo data removed');renderAdmin();nav();
+}
+
+/* ===================== EXPORTS ===================== */
+function groupByBranch(rows){const g={};rows.forEach(x=>(g[x.u.branch]=g[x.u.branch]||[]).push(x));return Object.entries(g).sort((a,b)=>db.branches.indexOf(a[0])-db.branches.indexOf(b[0]))}
+function filterText(){const y=AY(),p=[];if(F.ev)p.push('Event: '+y.events.find(e=>e.id===F.ev)?.name);if(F.br)p.push('Branch: '+F.br);if(F.sem)p.push('Semester: '+F.sem);return p.length?p.join(' | '):'All events, all branches'}
+function matrix(rows){const y=AY(),brs=groupByBranch(rows).map(g=>g[0]);const evs=[...new Set(rows.map(x=>x.ev.id))].map(id=>y.events.find(e=>e.id===id));
+  const body=evs.map(ev=>{const c=brs.map(b=>rows.filter(x=>x.ev.id===ev.id&&x.u.branch===b).length);return[ev.name,...c,c.reduce((a,b)=>a+b,0)]});
+  const tot=brs.map((b,i)=>body.reduce((s,r)=>s+r[i+1],0));return{head:['Event',...brs,'Total'],body,foot:['TOTAL',...tot,tot.reduce((a,b)=>a+b,0)]}}
+
+function groupStudents(rows){
+  const map=new Map();
+  rows.forEach(x=>{if(!map.has(x.u.uid))map.set(x.u.uid,{u:x.u,items:[]});map.get(x.u.uid).items.push(x)});
+  const byB={};
+  [...map.values()].forEach(g=>{g.items.sort((a,b)=>a.r.ts-b.r.ts);(byB[g.u.branch]=byB[g.u.branch]||[]).push(g)});
+  return Object.entries(byB).sort((a,b)=>db.branches.indexOf(a[0])-db.branches.indexOf(b[0])).map(([br,l])=>[br,l.sort((a,b)=>nat(a.u.sem,b.u.sem)||nat(a.u.roll,b.u.roll)||nat(a.u.name,b.u.name))]);
+}
+
+const COLS=['#','Name','Roll No.','Branch','Semester','Session','Mobile','Email','Event','Category','Team Name','Role','Registered On'];
+const rowVals=({r,u,ev},i)=>[i+1,u.name,u.roll,u.branch,u.sem,u.batch||'-',u.mobile,u.email||'-',ev.name,ev.cat,r.team||'-',r.role||'-',fmtTS(r.ts)];
+
+async function exportExcel(){
+  if(!window.ExcelJS)return toast('Excel library could not load (internet required)');
+  const rows=filtered();if(!rows.length)return toast('No registrations to export');
+  const y=AY(),wb=new ExcelJS.Workbook();wb.creator=db.college;wb.created=new Date();
+  const NAVY='FF0E2064',ORG='FFFF8A1F',thin={style:'thin',color:{argb:'FF9AA8D8'}},bd={top:thin,left:thin,bottom:thin,right:thin};
+  const fill=c=>({type:'pattern',pattern:'solid',fgColor:{argb:c}});
+  const NC=COLS.length,WID=[6,26,12,30,10,12,14,30,22,12,30,12,22],CEN=[1,3,5,6,7,10,12,13];
+  const title=(ws,n,sub)=>{
+    ws.mergeCells(1,1,1,n);const a=ws.getCell(1,1);a.value=db.college.toUpperCase();a.font={bold:true,size:16,color:{argb:'FFFFFFFF'}};a.alignment={horizontal:'center',vertical:'middle'};a.fill=fill(NAVY);ws.getRow(1).height=30;
+    ws.mergeCells(2,1,2,n);const b=ws.getCell(2,1);b.value=y.title+' — '+sub;b.font={bold:true,size:12,color:{argb:'FFFFFFFF'}};b.alignment={horizontal:'center',vertical:'middle'};b.fill=fill(ORG);ws.getRow(2).height=22;
+    ws.mergeCells(3,1,3,n);const c=ws.getCell(3,1);c.value='Filter: '+filterText()+'   |   Generated: '+new Date().toLocaleString('en-IN');c.font={italic:true,size:9,color:{argb:'FF555555'}};c.alignment={horizontal:'center'};
+  };
+  const page=(ws,hr)=>{ws.pageSetup={orientation:'landscape',paperSize:9,fitToPage:true,fitToWidth:1,fitToHeight:0,printTitlesRow:hr+':'+hr,margins:{left:.3,right:.3,top:.5,bottom:.5,header:.2,footer:.2}};ws.headerFooter={oddFooter:'&LPage &P of &N&R'+db.college}};
+  const table=(ws,list,sub)=>{
+    title(ws,NC,sub);
+    const h=ws.getRow(5);h.values=COLS;h.height=26;
+    h.eachCell(c=>{c.font={bold:true,color:{argb:'FFFFFFFF'},size:11};c.fill=fill(NAVY);c.alignment={horizontal:'center',vertical:'middle',wrapText:true};c.border=bd});
+    list.forEach((x,i)=>{const row=ws.addRow(rowVals(x,i));row.height=19;
+      row.eachCell({includeEmpty:true},(c,ci)=>{c.border=bd;c.alignment={vertical:'middle',horizontal:CEN.includes(ci)?'center':'left'};if(i%2)c.fill=fill('FFEAF0FF')})});
+    WID.forEach((w,i)=>ws.getColumn(i+1).width=w);
+    ws.autoFilter={from:{row:5,column:1},to:{row:5,column:NC}};
+    ws.views=[{state:'frozen',ySplit:5,xSplit:2,showGridLines:false}];
+    page(ws,5);
+  };
+  /* 1) all registrations, with every detail */
+  table(wb.addWorksheet('All Registrations'),rows,'All Registrations ('+rows.length+' entries)');
+  /* 2) one sheet per branch */
+  const used=new Set(['all registrations','summary']);
+  groupByBranch(rows).forEach(([br,list])=>{
+    let nm=br.replace(/[\\\/?*:\[\]]/g,'-').slice(0,31),k=2;while(used.has(nm.toLowerCase()))nm=nm.slice(0,28)+'-'+k++;used.add(nm.toLowerCase());
+    table(wb.addWorksheet(nm),list,br+' — '+list.length+' entries');
+  });
+  /* 3) event x branch summary */
+  const m=matrix(rows),ws0=wb.addWorksheet('Summary',{views:[{showGridLines:false}]});
+  title(ws0,m.head.length,'Registration Summary');
+  const h0=ws0.getRow(5);h0.values=m.head;h0.height=34;
+  h0.eachCell(c=>{c.font={bold:true,color:{argb:'FFFFFFFF'},size:11};c.fill=fill(NAVY);c.alignment={horizontal:'center',vertical:'middle',wrapText:true};c.border=bd});
+  m.body.forEach((r,i)=>{const row=ws0.addRow(r);row.eachCell((c,ci)=>{c.border=bd;c.alignment={horizontal:ci===1?'left':'center',vertical:'middle'};if(i%2)c.fill=fill('FFEAF0FF')})});
+  const ft=ws0.addRow(m.foot);ft.eachCell((c,ci)=>{c.font={bold:true};c.border=bd;c.fill=fill('FFFFE2C2');c.alignment={horizontal:ci===1?'left':'center'}});
+  ws0.getColumn(1).width=26;for(let i=2;i<=m.head.length;i++)ws0.getColumn(i).width=18;
+  ws0.pageSetup={orientation:'landscape',paperSize:9,fitToPage:true,fitToWidth:1,fitToHeight:0};
+  const buf=await wb.xlsx.writeBuffer();
+  download(new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}),y.title.replace(/\s+/g,'_')+'_Registrations.xlsx');
+  toast('Excel downloaded ✅');
+}
+
+function exportPDF(){
+  if(!window.jspdf)return toast('PDF library could not load (internet required)');
+  const rows=filtered();if(!rows.length)return toast('No registrations to export');
+  const y=AY(),doc=new window.jspdf.jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
+  if(!doc.autoTable)return toast('PDF table plugin could not load');
+  const PW=297,NAVY=[14,32,100];let sub='';
+  const head=()=>{doc.setFillColor(...NAVY);doc.rect(0,0,PW,20,'F');doc.setFillColor(255,138,31);doc.rect(0,20,PW,1.4,'F');doc.setTextColor(255);doc.setFont('helvetica','bold');doc.setFontSize(14);doc.text(db.college.toUpperCase(),PW/2,8,{align:'center'});doc.setFontSize(10);doc.text(y.title+'  -  '+sub,PW/2,15,{align:'center'});doc.setTextColor(0)};
+  const M={top:25,left:6,right:6,bottom:14};
+  const HEAD=['#','Name','Roll No.','Branch','Sem','Session','Mobile','Email','Event','Category','Team Name','Role','Registered On'];
+  const cs={0:{halign:'center',cellWidth:8},1:{cellWidth:30},2:{halign:'center',cellWidth:14},3:{cellWidth:28},4:{halign:'center',cellWidth:9},5:{halign:'center',cellWidth:16},6:{halign:'center',cellWidth:22},7:{cellWidth:38},8:{cellWidth:24},9:{halign:'center',cellWidth:16},10:{cellWidth:'auto'},11:{halign:'center',cellWidth:16},12:{halign:'center',cellWidth:24}};
+  const tbl=(list,startY)=>doc.autoTable({theme:'grid',startY,margin:M,head:[HEAD],body:list.map((x,i)=>{const v=rowVals(x,i);return v}),
+    headStyles:{fillColor:NAVY,textColor:255,halign:'center',fontSize:7.5,fontStyle:'bold'},styles:{fontSize:7,cellPadding:1.5,valign:'middle',overflow:'linebreak',lineColor:[154,168,216],lineWidth:.15},
+    alternateRowStyles:{fillColor:[234,240,255]},columnStyles:cs,didDrawPage:head});
+  const groups=groupByBranch(rows);
+  groups.forEach(([br,list],gi)=>{
+    if(gi)doc.addPage();
+    sub=br+'  ('+list.length+' entries)  |  '+filterText();
+    tbl(list,25);
+  });
+  /* summary page */
+  doc.addPage();sub='Registration Summary';const m=matrix(rows);
+  doc.autoTable({theme:'grid',startY:25,margin:M,head:[m.head],body:[...m.body,m.foot],headStyles:{fillColor:NAVY,textColor:255,halign:'center',fontSize:8},styles:{fontSize:8.5,cellPadding:1.8},alternateRowStyles:{fillColor:[234,240,255]},columnStyles:{0:{halign:'left',fontStyle:'bold'}},didDrawPage:head,didParseCell:d=>{if(d.row.index===m.body.length&&d.section==='body'){d.cell.styles.fontStyle='bold';d.cell.styles.fillColor=[255,226,194]}if(d.section==='body'&&d.column.index>0)d.cell.styles.halign='center'}});
+  const n=doc.getNumberOfPages();
+  for(let i=1;i<=n;i++){doc.setPage(i);doc.setFontSize(7.5);doc.setTextColor(110);doc.text('Generated on '+new Date().toLocaleString('en-IN'),6,205);doc.text('Page '+i+' of '+n,PW-6,205,{align:'right'})}
+  doc.setPage(n);doc.setTextColor(0);doc.setFontSize(9);
+  const fy=Math.min(doc.lastAutoTable.finalY+18,195);doc.line(15,fy,75,fy);doc.text('Sports / Event Coordinator',15,fy+5);doc.line(PW-75,fy,PW-15,fy);doc.text('Principal / HOD',PW-75,fy+5);
+  doc.save(y.title.replace(/\s+/g,'_')+'_Registrations.pdf');toast('PDF downloaded ✅');
+}
+
+/* ===================== HELP WIDGET + STUDENT HELP DESK ===================== */
+(function(){
+  const f=document.createElement('button');f.id='helpFab';f.type='button';f.textContent='?';f.title='Help';f.setAttribute('aria-label','Help');document.body.appendChild(f);
+  let sx=0,sy=0,ox=0,oy=0,drag=false,moved=false;
+  f.addEventListener('pointerdown',e=>{drag=true;moved=false;sx=e.clientX;sy=e.clientY;const r=f.getBoundingClientRect();ox=r.left;oy=r.top;try{f.setPointerCapture(e.pointerId)}catch(_){}});
+  f.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-sx,dy=e.clientY-sy;if(!moved&&Math.hypot(dx,dy)<6)return;moved=true;
+    const x=Math.min(innerWidth-f.offsetWidth,Math.max(0,ox+dx)),y=Math.min(innerHeight-f.offsetHeight,Math.max(0,oy+dy));
+    f.style.left=x+'px';f.style.top=y+'px';f.style.right='auto';f.style.bottom='auto'});
+  f.addEventListener('pointerup',()=>{if(drag&&!moved)helpMenu();drag=false});
+  f.addEventListener('pointercancel',()=>{drag=false});
+  addEventListener('resize',()=>{if(!f.style.left)return;const r=f.getBoundingClientRect();f.style.left=Math.max(0,Math.min(innerWidth-f.offsetWidth,r.left))+'px';f.style.top=Math.max(0,Math.min(innerHeight-f.offsetHeight,r.top))+'px'});
+})();
+function updateHelp(){const f=$('#helpFab');if(f)f.classList.toggle('on',cur!=='admin'&&sess?.role!=='admin')}
+function helpMenu(){showModal(`<h3>❓ Help</h3><p class="mut" style="font-size:13px;margin-top:-6px">What do you need help with?</p>
+  <div style="display:flex;flex-direction:column;gap:14px;margin-top:14px"><button class="btn o" onclick="helpForgot()">🔑 Forgot Password</button><button class="btn" onclick="helpQuery()">💬 Send Me Any Query</button><button class="btn d" onclick="closeModal()">Close</button></div>`)}
+function helpFields(){return`<label>Full Name *</label><input id="h_n" autocomplete="name">
+  <label>Registration / Roll No. *</label><input id="h_r">
+  <label>Mobile Number *</label><input id="h_m" inputmode="numeric" maxlength="10">
+  <label>Email ID *</label><input id="h_e" type="email">`}
+function helpForgot(){showModal(`<div class="hf"><h3>🔑 Forgot Password</h3><p class="mut" style="font-size:13px;margin-top:-6px">Enter the same details you gave while creating your account.</p>${helpFields()}
+  <div class="row" style="margin-top:16px"><button class="btn o" onclick="submitHelp('forgot')">Send</button><button class="btn d" onclick="helpMenu()">Back</button></div></div>`)}
+function helpQuery(){showModal(`<div class="hf"><h3>💬 Send Me Any Query</h3>${helpFields()}
+  <label>Your Query *</label><textarea id="h_q" rows="6" placeholder="Type your query here…"></textarea>
+  <div class="row" style="margin-top:16px"><button class="btn o" onclick="submitHelp('query')">Send</button><button class="btn d" onclick="helpMenu()">Back</button></div></div>`,true)}
+function submitHelp(kind){
+  const q={id:rid(),type:kind,name:val('h_n'),roll:val('h_r'),mobile:val('h_m'),email:val('h_e').toLowerCase(),msg:kind==='query'?val('h_q'):'',ts:Date.now(),done:false};
+  if(!q.name||!q.roll||!q.mobile||!q.email)return toast('Please fill all fields marked with *');
+  if(!/^\d{10}$/.test(q.mobile))return toast('Mobile number must be 10 digits');
+  if(!/^\S+@\S+\.\S+$/.test(q.email))return toast('Enter a valid email');
+  if(kind==='query'&&!q.msg)return toast('Please write your query');
+  db.queries=db.queries||{};db.queries[q.id]=q;
+  if(!save())return;
+  showModal(`<h3>✅ Request Sent</h3><div class="banner ok" style="margin-top:8px">${kind==='forgot'?'Your request has been received. Our support team is available 24x7 — you will get your password on your registered email within 24 hours.':'Your query has been sent to the institute. You will get a reply on your email within 24 hours.'}</div>
+   <div class="row" style="margin-top:16px"><button class="btn" onclick="closeModal()">OK</button></div>`);
+}
+const pendQ=()=>Object.values(db.queries||{}).filter(q=>!q.done).length;
+function findUserForQ(q){const e=(q.email||'').toLowerCase(),us=Object.values(db.users);
+  return us.find(u=>(u.email||'').toLowerCase()===e)||us.find(u=>String(u.roll).toLowerCase()===String(q.roll).toLowerCase()&&u.mobile===q.mobile)||null}
+function pwCell(u){return u.plain?`<span class="pwv" data-pw="${esc(u.plain)}">••••••</span> <button class="btn s d" onclick="togPw(this)" title="Show / hide">🙈</button>`:'<span class="mut">— (old account)</span>'}
+function togPw(b){const s=b.previousElementSibling;if(b.dataset.on){s.textContent='••••••';b.textContent='🙈';delete b.dataset.on}else{s.textContent=s.dataset.pw;b.textContent='👁';b.dataset.on='1'}}
+function admHelp(){
+  const L=Object.values(db.queries||{}).sort((a,b)=>b.ts-a.ts);
+  $('#admBody').innerHTML=`<div class="card"><h3>🆘 Student Help Desk</h3>
+   <p class="mut" style="font-size:12px;margin-top:-6px">Forgot-password requests and student queries appear here. For a password request, check the student's details, then press "✉ Send Password" to email the login details to the student.</p>
+   ${L.map(q=>{const fg=q.type==='forgot',u=fg?findUserForQ(q):null;
+    return`<div class="qcard ${q.done?'dn':''}"><div class="row" style="justify-content:space-between"><span class="qb ${fg?'':'q'}">${fg?'🔑 Forgot Password':'💬 Query'}</span><small class="mut">${fmtTS(q.ts)}${q.done?' • ✅ Done':''}</small></div>
+     <div class="kv"><div><span>Name</span><br><b>${esc(q.name)}</b></div><div><span>Mobile</span><br><b><a href="tel:${esc(q.mobile)}">${esc(q.mobile)}</a></b></div><div><span>Email</span><br><b>${esc(q.email)}</b></div><div><span>Registration / Roll No.</span><br><b>${esc(q.roll)}</b></div>
+     ${fg?`<div><span>User ID</span><br><b>${u?esc(u.uid):'—'}</b></div>`:''}</div>
+     ${fg?(u?`<label>Password (you can edit it before sending)</label><input class="pwv" id="pw_${q.id}" value="${esc(u.plain||'')}" placeholder="Type a password for this student" autocomplete="off"><small class="mut">Will be emailed to: ${esc(u.email)}</small>`:'<div class="banner no" style="margin-top:10px">No matching account found for these details.</div>'):''}
+     ${q.msg?`<div style="margin-top:10px;white-space:pre-wrap;font-size:14px;background:#0a1233;border-radius:10px;padding:10px">${esc(q.msg)}</div>`:''}
+     <div class="row" style="margin-top:12px">${fg?(u?`<button class="btn s g" onclick="sendPw('${q.id}')">✉ Send Password</button>`:''):`<button class="btn s g" onclick="mailQ('${q.id}')">✉ Reply by Email</button>`}
+     <button class="btn s" onclick="qDone('${q.id}')">${q.done?'↩ Reopen':'✔ Mark Done'}</button><button class="btn s r" onclick="qDel('${q.id}')">Delete</button></div></div>`}).join('')||'<p class="mut" style="margin-top:14px">No requests yet.</p>'}</div>`;
+}
+async function sendPw(id){
+  const q=db.queries[id];if(!q)return;const u=findUserForQ(q);if(!u)return toast('No matching account found');
+  const pw=($('#pw_'+id)?.value||'').trim();
+  if(pw.length<4)return toast('Password must be at least 4 characters');
+  if(pw!==u.plain){u.pass=hsh(pw);u.plain=pw;delete u.tmp}   /* keep the account in sync with what is emailed */
+  save();
+  const sub=Y().title+' — Your password',
+  body=`Hi ${u.name},\n\n${db.college}\n\nAs requested, here are your ${Y().title} portal login details:\n\nName: ${u.name}\nMobile: ${u.mobile}\nEmail: ${u.email}\nUser ID: ${u.uid}\nPassword: ${pw}\n\nPlease log in and change your password from your dashboard.\n\nRegards,\n${db.college}`;
+  const r=await sendMail(u.email,u.name,sub,body);
+  if(r==='sent'){q.done=true;save();toast('Password sent to '+u.email+' ✅');renderAdmin()}
+  else if(r==='demo'){toast('Your mail app is opening — press Send there');location.href='mailto:'+encodeURIComponent(u.email).replace('%40','@')+'?subject='+encodeURIComponent(sub)+'&body='+encodeURIComponent(body)}
+  else toast('Could not send the email. Please try again later.');
+}
+function mailQ(id){const q=db.queries[id];if(!q)return;
+  const sub=Y().title+' — Reply to your query',body=`Hello ${q.name},\n\n\n\nRegards,\n${db.college}`;
+  location.href='mailto:'+encodeURIComponent(q.email).replace('%40','@')+'?subject='+encodeURIComponent(sub)+'&body='+encodeURIComponent(body)}
+function qDone(id){const q=db.queries[id];if(!q)return;q.done=!q.done;save();renderAdmin()}
+function qDel(id){if(!confirm('Delete this request?'))return;delete db.queries[id];save();renderAdmin()}
+/* quick switches: all sports / all cultural / whole UMANG */
+function bulkHTML(y){
+  const sp=y.events.filter(e=>e.cat==='Sports'),cu=y.events.filter(e=>e.cat==='Cultural');
+  const row=(l,on,fn)=>`<div class="row" style="justify-content:space-between;padding:10px 0;border-bottom:1px solid #22307a"><b>${l}</b><label class="sw" style="margin:0"><input type="checkbox" ${on?'checked':''} onchange="${fn}"><s></s></label></div>`;
+  return`<div class="card"><h3>⚡ Quick Switches</h3><p class="mut" style="font-size:12px;margin-top:-6px">ON = students can register, OFF = closed.</p>
+   ${row('🏆 Entire UMANG (all Sports + Cultural)',y.regOpen,'masterSet(this.checked)')}
+   ${row('⚽ All Sports ('+sp.length+')',sp.length>0&&sp.every(e=>e.open),"bulkSet('Sports',this.checked)")}
+   ${row('🎭 All Cultural ('+cu.length+')',cu.length>0&&cu.every(e=>e.open),"bulkSet('Cultural',this.checked)")}</div>`}
+function masterSet(on){const y=AY();y.regOpen=on;save();toast(on?'UMANG registration ON ✅':'Entire UMANG closed ⛔');admEvents()}
+function bulkSet(cat,on){AY().events.forEach(e=>{if(e.cat===cat)e.open=on});save();toast('All '+cat+(on?' opened ✅':' closed ⛔'));admEvents()}
+
+/* ===================== START ===================== */
+if(sess?.role==='student'&&!db.users[sess.uid]){sess=null;saveSess()}
+purgeDemo();
+go('home');
+if(CLOUD)cloudBoot();
+</script>
+</body>
+</html>
